@@ -6,6 +6,8 @@ Menu:
 
 - `Edo Tools->TabbedPanelMod->Tabbed panel mod`
 
+----
+
 <details><summary><h2>Features</h2></summary>
 
 - Tabs are placed at the right side of the Tabbed Panel and the labels are replaced by icons (to minimize screen space used)
@@ -16,6 +18,9 @@ Menu:
    - `Edo Tools->TabbedPanelMod->Tabbed panel mod`
 
 </details>
+
+----
+
 <details><summary><h2>Images</h2></summary>
 
 <details><summary><h3>Tabbed panel (tools panel)</h3></summary>
@@ -45,6 +50,9 @@ Menu:
 
 </details>
 </details>
+
+----
+
 <details><summary><h2>Additional information</h2></summary>
 
 - the icons used for the tabs are placed in
@@ -61,9 +69,10 @@ Menu:
    - for its name you have to consider the logic explained in the previous point.
 
 </details>
+
+----
+
 Best regards,
 
-## edoFro
-
-.
+edoFro
 

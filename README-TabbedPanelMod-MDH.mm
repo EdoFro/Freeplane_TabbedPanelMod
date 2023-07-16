@@ -132,6 +132,7 @@ justa a **dummy** markdown file
 <text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
 <node TEXT="`Edo Tools-&gt;TabbedPanelMod-&gt;Tabbed panel mod`" ID="ID_781065399"/>
 </node>
+<node TEXT="----" ID="ID_267725721"/>
 <node TEXT="Features" ID="ID_1690658422">
 <icon BUILTIN="emoji-1F53B"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1585404507"><richcontent TYPE="NOTE">
@@ -145,6 +146,7 @@ justa a **dummy** markdown file
 </node>
 </node>
 </node>
+<node TEXT="&#xa;----" ID="ID_1280263761"/>
 <node TEXT="Images" ID="ID_99327823">
 <icon BUILTIN="emoji-1F53B"/>
 <node TEXT="Tabbed panel (tools panel)" ID="ID_1511582319">
@@ -190,6 +192,7 @@ justa a **dummy** markdown file
 </node>
 </node>
 </node>
+<node TEXT="&#xa;----" ID="ID_348552161"/>
 <node TEXT="Additional information" ID="ID_1285069431">
 <icon BUILTIN="emoji-1F53B"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_705860275"><richcontent TYPE="NOTE">
@@ -213,10 +216,9 @@ justa a **dummy** markdown file
 </node>
 </node>
 </node>
+<node TEXT="&#xa;----" ID="ID_140783039"/>
 <node TEXT="Best regards," ID="ID_773119502"/>
-<node TEXT="edoFro" ID="ID_740651648">
-<node TEXT="." ID="ID_1025738938"/>
-</node>
+<node TEXT="edoFro" ID="ID_740651648"/>
 </node>
 </node>
 </node>

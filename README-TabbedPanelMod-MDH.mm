@@ -114,7 +114,7 @@ justa a **dummy** markdown file
 <attribute_layout NAME_WIDTH="135 pt" VALUE_WIDTH="40.5 pt"/>
 <attribute NAME="headersToUnderline" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <attribute NAME="hideFolded" VALUE="false"/>
-<attribute NAME="headerNumbering" VALUE="true"/>
+<attribute NAME="headerNumbering" VALUE="false"/>
 <attribute NAME="topHeadersNumbered" VALUE="false"/>
 <attribute NAME="topHeaderStartingNumber" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1"/>
 <attribute NAME="fileLinksRelative" VALUE="false"/>
@@ -127,17 +127,94 @@ justa a **dummy** markdown file
 <text>= edofro.MarkDownHelper.MDH.document(node)</text></richcontent>
 <node TEXT="TabbedPanelMod Add-on" ID="ID_501079134">
 <node TEXT="This add-on changes the tabs in the tabbed panel (Tool panel) to the right and changes the labels to icons." ID="ID_974026164"/>
+<node TEXT="Menu:" ID="ID_678822760"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_861803648"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="`Edo Tools-&gt;TabbedPanelMod-&gt;Tabbed panel mod`" ID="ID_781065399"/>
+</node>
+<node TEXT="Features" ID="ID_1690658422">
+<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1585404507"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="Tabs are placed at the right side of the Tabbed Panel and the labels are replaced by icons (to minimize screen space used)" ID="ID_1032034178"/>
+<node TEXT="The user can modify  the tab panel&apos;s width for each tab independently" ID="ID_1446655031"/>
+<node TEXT="When clicking on a tab, its content is shown and resized to its own defined width" ID="ID_371636095"/>
+<node TEXT="When clicking again on an already selected tab, the Tab panel minimizes itself hiding its content but tabs stay visible to show their content easily" ID="ID_108871413"/>
+<node TEXT="To return to the standard TabbedPanel layout, execute the menu command again" ID="ID_393384476">
+<node TEXT="`Edo Tools-&gt;TabbedPanelMod-&gt;Tabbed panel mod`" ID="ID_847752627"/>
+</node>
+</node>
+</node>
+<node TEXT="Images" ID="ID_99327823">
+<node TEXT="Tabbed panel (tools panel)" ID="ID_1511582319">
+<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1781244784"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="in its standard layout" ID="ID_687154238"/>
+<node TEXT="before executing the **TabbedPanelMod** command" ID="ID_1209707916"/>
+<node TEXT="Tabs are on the top side of the panel" ID="ID_1479029106"/>
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1101417348"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
-<node TEXT="Standard.png" POSITION="bottom_or_right" ID="ID_579773681" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Standard.png?raw=true"/>
+<node TEXT="Standard.png" POSITION="bottom_or_right" ID="ID_579773681" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Standard.png"/>
 </node>
+</node>
+</node>
+<node TEXT="After applying TabbedPanelMod" ID="ID_92203221">
+<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1328582666"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="Menu:" ID="ID_698021120">
+<node TEXT="`Edo Tools-&gt;TabbedPanelMod-&gt;Tabbed panel mod`" ID="ID_419736516"/>
+</node>
+<node TEXT="Tabs are now placed on the right side of the panel" ID="ID_983741195"/>
+<node TEXT="The tabs labels are replaced with icons" ID="ID_1925244619"/>
+<node TEXT="The former text of the labels are now used as ToolTipText for the tabs" ID="ID_1575862284"/>
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1563654945"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="TabsToTheRight.png" POSITION="bottom_or_right" ID="ID_1050022607" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/TabsToTheRight.png"/>
 </node>
+</node>
+</node>
+<node TEXT="Tabbed panel minimized" ID="ID_1723473947">
+<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_639840205"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="After clicking again on the selected tab." ID="ID_313421800"/>
+<node TEXT="Content is hidden" ID="ID_1695145394"/>
+<node TEXT="Tabs are still visible" ID="ID_1140221620"/>
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_619303305"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="minimizedClickedAgain.png" POSITION="bottom_or_right" ID="ID_1103020634" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/minimizedClickedAgain.png"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Additional information" ID="ID_1285069431">
+<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_705860275"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="the icons used for the tabs are placed in" ID="ID_1617942293">
+<node TEXT="`Icons-&gt;User icons-&gt;TabbedPanelMod-&gt;...`" ID="ID_1413946086"/>
+</node>
+<node TEXT="the script selects the icon for the tab using this logic:" ID="ID_1428006691">
+<node TEXT="if there is an icon that is named equal than the tab&apos;s label text, then: use it" ID="ID_1667016567"/>
+<node TEXT="else: use the icon that is named as the tabs number" ID="ID_1074899986">
+<node TEXT="starting with 0" ID="ID_412988942"/>
+<node TEXT="the first 4 (`00.svg` to `03.svg`) are used for the standard tabs in Freeplane" ID="ID_261016597"/>
+</node>
+</node>
+<node TEXT="if another add-on or script creates an additional tab, you can add an icon for it" ID="ID_705039532">
+<node TEXT="for example, using the devtools addon" ID="ID_694313724"/>
+<node TEXT="or adding it manually in the user directory" ID="ID_657241000">
+<node TEXT="`&lt;userdirectory&gt;/icons/tabbedPanelMod/`" ID="ID_1030444140"/>
+</node>
+<node TEXT="for its name you have to consider the logic explained in the previous point." ID="ID_1863698831"/>
+</node>
+</node>
+</node>
+<node TEXT="Best regards," ID="ID_773119502"/>
+<node TEXT="edoFro" ID="ID_740651648">
+<node TEXT="." ID="ID_1025738938"/>
 </node>
 </node>
 </node>

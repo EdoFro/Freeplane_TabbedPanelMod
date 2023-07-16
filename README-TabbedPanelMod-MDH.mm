@@ -110,9 +110,9 @@ blockquote {
 justa a **dummy** markdown file
 </text></richcontent>
 <edge COLOR="#7c0000"/>
-<node TEXT="README.MD" STYLE_REF="MarkdownHelperNode" ID="ID_1542077692">
+<node TEXT="README.MD" STYLE_REF="MarkdownHelperNode" ID="ID_1542077692" LINK="file:/C:/Users/efroh/GitHub/Freeplane_TabbedPanelMod/README.MD">
 <attribute_layout NAME_WIDTH="135 pt" VALUE_WIDTH="40.5 pt"/>
-<attribute NAME="headersToUnderline" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2"/>
+<attribute NAME="headersToUnderline" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <attribute NAME="hideFolded" VALUE="false"/>
 <attribute NAME="headerNumbering" VALUE="true"/>
 <attribute NAME="topHeadersNumbered" VALUE="false"/>
@@ -125,6 +125,21 @@ justa a **dummy** markdown file
 <attribute NAME="ignoreHeaderImageObjects" VALUE="false"/>
 <richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.document(node)</text></richcontent>
+<node TEXT="TabbedPanelMod Add-on" ID="ID_501079134">
+<node TEXT="This add-on changes the tabs in the tabbed panel (Tool panel) to the right and changes the labels to icons." ID="ID_974026164"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1101417348"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
+<node TEXT="Standard.png" POSITION="bottom_or_right" ID="ID_579773681" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Standard.png?raw=true"/>
+</node>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1563654945"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
+<node TEXT="TabsToTheRight.png" POSITION="bottom_or_right" ID="ID_1050022607" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/TabsToTheRight.png"/>
+</node>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_619303305"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
+<node TEXT="minimizedClickedAgain.png" POSITION="bottom_or_right" ID="ID_1103020634" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/minimizedClickedAgain.png"/>
+</node>
+</node>
 </node>
 </node>
 </node>

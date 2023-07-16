@@ -50,7 +50,7 @@
             <attribute_contains_condition ATTRIBUTE="modifiedFile" VALUE="true"/>
         </conditional_style>
     </conditional_styles>
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false" MDI_template="v0.0.13"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" BookmarksKeys="{}" followedTemplateLocation="template:/DFGHI%20Proyecto-Groovy-Tareas-MDI-menuButton%20(vis01).mm" pruebaDiccionario="ID_311366985|:|idDictionary|-|ID_323296041|:|ToM Actions|-|" show_icon_for_attributes="true" show_notes_in_map="false" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" MDI_template="v0.0.13" mdhFreeMindmapPath="hhgf" save_folding="save_folding_if_map_is_changed" followedMapLastTime="1661362125221" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_118736178" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -475,410 +475,7 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="TabbedPanelMod.groovy" ID="ID_661108215" LINK="TabbedPanelMod/scripts/TabbedPanelMod.groovy">
-<icon BUILTIN="emoji-1F527"/>
-<richcontent TYPE="NOTE">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      import javax.swing.JTabbedPane
-    </p>
-    <p>
-      import groovy.swing.SwingBuilder
-    </p>
-    <p>
-      import javax.swing.*
-    </p>
-    <p>
-      import java.awt.*
-    </p>
-    <p>
-      import java.awt.event.*
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      TP = ui.getFreeplaneTabbedPanel()
-    </p>
-    <p>
-      //return TP
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      iconos = ['IconAction.emoji-1F3A8', 'IconAction.list', 'IconAction.emoji-1F4C5', 'IconAction.emoji-1F3AC',
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;'IconAction.emoji-1F9A0', 'IconAction.emoji-1F980', 'IconAction.emoji-1F98D', 'IconAction.emoji-1F98B',
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;'IconAction.emoji-1F43A', 'IconAction.emoji-1F41E', 'IconAction.emoji-1F98A', 'IconAction.emoji-1F577',
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;'IconAction.emoji-1F99D', 'IconAction.emoji-1F981', 'IconAction.emoji-1F993']
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      swingBuilder =&#xa0;&#xa0;new SwingBuilder()
-    </p>
-    <p>
-      collapsedWidth = 40
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      switch(TP.getTabPlacement()){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;case JTabbedPane.TOP:
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;def numTabs = TP.tabCount
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if (TP.hasProperty('collapsed')){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.collapsed = false
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;} else {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.metaClass.collapsed = false
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if (!TP.hasProperty('tabWidths')){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;def tw = []
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;numTabs.times{ tw &lt;&lt; null}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.metaClass.tabWidths = tw
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if (TP.hasProperty('originalWidth')){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.originalWidth = TP.width
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;} else {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.metaClass.originalWidth = TP.width
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;numTabs.times{i -&gt;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;def toolTip = TP.getTitleAt(i)?:TP.getToolTipTextAt(i)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setToolTipTextAt(i, toolTip)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setTabComponentAt(i, tabButton(i, toolTip))
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setTitleAt(i,null)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setTabPlacement(JTabbedPane.RIGHT)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if(TP.tabWidths[TP.selectedIndex]){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;resizeTP(TP.tabWidths[TP.selectedIndex])
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.componentListeners.findAll{ it.class.toString() == 'class CustomTabPanelComponentListener' }.each{TP.removeComponentListener(it)}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.addComponentListener(new CustomTabPanelComponentListener())
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;break
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;case JTabbedPane.RIGHT:
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.tabCount.times{i -&gt;&#xa0;&#xa0;TP.setTabComponentAt(i,null)}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.tabCount.times{i -&gt;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setTitleAt(i,TP.getToolTipTextAt(i))
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setToolTipTextAt(i,null)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setTabPlacement(JTabbedPane.TOP)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.collapsed = false
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;resizeTP(TP.originalWidth)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;break
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;//default:
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      return 'done'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      def tabButton(num, toolTip){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def boton = swingBuilder.button(
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;//text&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: 'hola',
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;horizontalAlignment : SwingConstants.LEFT,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;icon&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: getIcon(num,toolTip),
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;toolTipText&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: toolTip,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;//preferredSize&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: new Dimension(20,20),
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;//minimumSize&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: minD,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;margin&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: new Insets(0,0,0,0),
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;//border&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: BorderFactory.createLineBorder(Color.BLUE),
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;borderPainted&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: false,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;opaque&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: false,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;actionPerformed&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: {e -&gt;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if ( TP.selectedIndex==num &amp;&amp; !TP.collapsed ){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;resizeTP(collapsedWidth)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.collapsed = true
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}else{
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.setSelectedIndex(num)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if(TP.tabWidths[num]){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;resizeTP(TP.tabWidths[num])
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;} else if (TP.collapsed){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;resizeTP(TP.originalWidth)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TP.collapsed = false
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;)
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;return boton
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      def getIcon(i,t){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def ico = 'IconAction.ToolTabIcons/'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;menuUtils.getMenuItemIcon(&quot;${ico}${t}&quot;)?:menuUtils.getMenuItemIcon(&quot;${ico}${t.toLowerCase()}&quot;)?: menuUtils.getMenuItemIcon(&quot;${ico}${String.format('%02d',i)}&quot;)?: menuUtils.getMenuItemIcon(iconos[i])
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      def resizeTP(w){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def prevDim = TP.getSize()
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;TP.setPreferredSize(new Dimension(w,(int) prevDim.height))
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def parentBox = TP.parent
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;parentBox.revalidate()
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;parentBox.repaint()
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      class CustomTabPanelComponentListener implements ComponentListener {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;public void componentResized(ComponentEvent e) { //https://docs.oracle.com/javase/8/docs/api/java/awt/event/ComponentEvent.html
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;def comp = e.component
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;if (comp.getTabPlacement()==JTabbedPane.RIGHT &amp;&amp; !comp.collapsed){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;def selTab = comp.selectedIndex
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;comp.tabWidths[selTab] = comp.width
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;public void componentMoved(ComponentEvent e) {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// e.source.title =&#xa0;&#xa0;&quot; moved. &quot;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;public void componentShown(ComponentEvent e) {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// e.source.title =&#xa0;&#xa0;&quot; shown. &quot;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;public void componentHidden(ComponentEvent e) {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// e.getSource().title =&#xa0;&#xa0;&quot; hidden. &quot;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      }
-    </p>
-  </body>
-</html></richcontent>
-<richcontent TYPE="DETAILS">
+<node TEXT="TabbedPanelMod.groovy" ID="ID_661108215" LINK="TabbedPanelMod/scripts/TabbedPanelMod.groovy"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -903,7 +500,7 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="TabbedPanelMod" FOLDED="true" ID="ID_1254328724" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/" VSHIFT_QUANTITY="-0.75 pt">
+<node TEXT="TabbedPanelMod" ID="ID_1254328724" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/" VSHIFT_QUANTITY="-0.75 pt">
 <node TEXT="00.svg" ID="ID_1678729263" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/00.svg"/>
 <node TEXT="01.svg" ID="ID_167708381" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/01.svg"/>
 <node TEXT="02.svg" ID="ID_113537657" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/02.svg"/>
@@ -915,6 +512,7 @@ before the actual namefilter setting)
 <node TEXT="08.svg" ID="ID_1993535029" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/08.svg"/>
 <node TEXT="09.svg" ID="ID_393817510" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/09.svg"/>
 <node TEXT="test.svg" ID="ID_1889146616" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/test.svg"/>
+<node TEXT="TabbedPanelMod.svg" ID="ID_1895888183" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/TabbedPanelMod.svg"/>
 </node>
 <node TEXT="colores iconos Freeplane" ID="ID_327717405">
 <node TEXT="3C83C5" ID="ID_1978542219"/>
@@ -949,17 +547,20 @@ before the actual namefilter setting)
 </node>
 </node>
 <node TEXT="images" ID="ID_1648376623" LINK="TabbedPanelMod/images/">
-<node TEXT="TabbedPanelMod-screenshot-1.png" STYLE_REF="pendingTask" ID="ID_514650521">
+<node TEXT="tabbedPanelMod.svg" STYLE_REF="pendingTask" ID="ID_953508081">
+<node TEXT="TabbedPanelMod.svg" STYLE_REF="freshNew" POSITION="bottom_or_right" ID="ID_633498564" LINK="TabbedPanelMod/images/TabbedPanelMod.svg"/>
+</node>
+<node TEXT="TabbedPanelMod-screenshot-1.png" ID="ID_514650521">
 <node TEXT="128x77" ID="ID_528208629"/>
 </node>
-<node TEXT="TabbedPanelMod.png" STYLE_REF="pendingTask" ID="ID_338501651">
+<node TEXT="TabbedPanelMod.png" ID="ID_338501651">
 <node TEXT="53x32" ID="ID_1079195239"/>
 </node>
-<node TEXT="TabbedPanelMod-icon.png" STYLE_REF="pendingTask" ID="ID_1658780343">
+<node TEXT="TabbedPanelMod-icon.png" ID="ID_1658780343">
 <node TEXT="27x16" ID="ID_282427033"/>
 </node>
 </node>
-<node TEXT="TabbedPanelMod.mm" STYLE_REF="freshNew" ID="ID_842309458" LINK="TabbedPanelMod/TabbedPanelMod.mm"/>
+<node TEXT="TabbedPanelMod.mm" ID="ID_842309458" LINK="TabbedPanelMod/TabbedPanelMod.mm"/>
 <node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_339327810"><richcontent TYPE="DETAILS">
 <html>
   <head>
@@ -975,6 +576,10 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_509161169"/>
+<node TEXT="TabbedPanelMod-v0.1.addon.mm" POSITION="bottom_or_right" ID="ID_1694910110" LINK="TabbedPanelMod/TabbedPanelMod-v0.1.addon.mm"/>
+<node TEXT="TabbedPanelMod.mm.bak" POSITION="bottom_or_right" ID="ID_1277294252" LINK="TabbedPanelMod/TabbedPanelMod.mm.bak"/>
+<node TEXT="history.md" POSITION="bottom_or_right" ID="ID_1635185936" LINK="TabbedPanelMod/history.md"/>
+<node TEXT="version.properties" POSITION="bottom_or_right" ID="ID_756696516" LINK="TabbedPanelMod/version.properties"/>
 </node>
 <node TEXT="build.gradle" FOLDED="true" ID="ID_167800917">
 <icon BUILTIN="pencil"/>
@@ -1567,8 +1172,7 @@ justa a **dummy** markdown file
       SOFTWARE.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node TEXT="TabbedPanelMod project.mm" ID="ID_1474290422" LINK="TabbedPanelMod%20project.mm"/>
@@ -1581,7 +1185,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-07-15&#xa0;&#xa0;17:32:50
+      Inated:&#xa0;&#xa0;&#xa0;2023-07-15&#xa0;&#xa0;18:14:43
     </p>
     <p>
       
@@ -1611,7 +1215,7 @@ justa a **dummy** markdown file
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      20 folders didn't need to be moved&#xa0;
+      24 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -1675,7 +1279,7 @@ justa a **dummy** markdown file
   </body>
 </html></richcontent>
 </node>
-<node TEXT="iconos elegidos" ID="ID_1753452369"><richcontent TYPE="NOTE">
+<node TEXT="iconos elegidos" FOLDED="true" ID="ID_1753452369"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -2369,6 +1973,7 @@ justa a **dummy** markdown file
 </node>
 </node>
 </node>
+<node TEXT=".gitattributes" STYLE_REF="freshNew" ID="ID_43647129" LINK=".gitattributes"/>
 </node>
 </node>
 </map>

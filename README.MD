@@ -16,6 +16,7 @@ Menu:
    - `Edo Tools->TabbedPanelMod->Tabbed panel mod`
 
 </details>
+
 ## Images
 
 <details><summary><h3>Tabbed panel (tools panel)</h3></summary>

@@ -501,7 +501,9 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 <node TEXT="TabbedPanelMod" ID="ID_1254328724" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/" VSHIFT_QUANTITY="-0.75 pt">
-<node TEXT="00.svg" ID="ID_1678729263" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/00.svg"/>
+<node TEXT="00.svg" ID="ID_1678729263" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/00.svg">
+<node TEXT="00" ID="ID_476887472" LINK="menuitem:_IconAction.TabbedPanelMod/00"/>
+</node>
 <node TEXT="01.svg" ID="ID_167708381" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/01.svg"/>
 <node TEXT="02.svg" ID="ID_113537657" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/02.svg"/>
 <node TEXT="03.svg" ID="ID_838819414" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/03.svg"/>
@@ -980,7 +982,11 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="resources" ID="ID_687946481" LINK="resources/"/>
+<node TEXT="resources" ID="ID_687946481" LINK="resources/">
+<node TEXT="Standard.png" ID="ID_781611361" LINK="resources/Standard.png"/>
+<node TEXT="TabsToTheRight.png" ID="ID_413585294" LINK="resources/TabsToTheRight.png"/>
+<node TEXT="minimizedClickedAgain.png" ID="ID_1509093809" LINK="resources/minimizedClickedAgain.png"/>
+</node>
 <node TEXT="ignoredByGitHub" ID="ID_480970289" LINK="ignoredByGitHub/"><richcontent TYPE="DETAILS">
 <html>
   <head>
@@ -1185,7 +1191,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-07-15&#xa0;&#xa0;18:14:43
+      Inated:&#xa0;&#xa0;&#xa0;2023-07-16&#xa0;&#xa0;15:28:12
     </p>
     <p>
       
@@ -1200,7 +1206,7 @@ justa a **dummy** markdown file
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;0 new file(s) imported as node(s)&#xa0;
+      &#xa0;3 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
       &#xa0;0 node(s) moved/renamed in drive
@@ -1215,7 +1221,7 @@ justa a **dummy** markdown file
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      24 folders didn't need to be moved&#xa0;
+      20 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -1224,7 +1230,7 @@ justa a **dummy** markdown file
       
     </p>
     <p>
-      0.1 seconds
+      0.2 seconds
     </p>
     <p>
       

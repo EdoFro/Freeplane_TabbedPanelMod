@@ -96,7 +96,7 @@ def tabButton(num, toolTip){
 }
 
 def getIcon(i,t){
-    def ico = 'IconAction.TabedPanelMod/'
+    def ico = 'IconAction.TabbedPanelMod/'
     menuUtils.getMenuItemIcon("${ico}${t}")?:menuUtils.getMenuItemIcon("${ico}${t.toLowerCase()}")?: menuUtils.getMenuItemIcon("${ico}${String.format('%02d',i)}")?: menuUtils.getMenuItemIcon(iconos[i])
 }
 

@@ -16,8 +16,7 @@ Menu:
    - `Edo Tools->TabbedPanelMod->Tabbed panel mod`
 
 </details>
-
-## Images
+<details><summary><h2>Images</h2></summary>
 
 <details><summary><h3>Tabbed panel (tools panel)</h3></summary>
 
@@ -44,6 +43,7 @@ Menu:
 - Tabs are still visible
 - ![minimizedClickedAgain.png](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/minimizedClickedAgain.png)
 
+</details>
 </details>
 <details><summary><h2>Additional information</h2></summary>
 

@@ -146,6 +146,7 @@ justa a **dummy** markdown file
 </node>
 </node>
 <node TEXT="Images" ID="ID_99327823">
+<icon BUILTIN="emoji-1F53B"/>
 <node TEXT="Tabbed panel (tools panel)" ID="ID_1511582319">
 <icon BUILTIN="emoji-1F53B"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1781244784"><richcontent TYPE="NOTE">

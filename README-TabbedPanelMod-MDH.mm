@@ -1,7 +1,7 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="README-TabbedPanelMod-MDH" FOLDED="false" ID="ID_696401721" STYLE="oval">
-<font SIZE="18"/>
+<node TEXT="README-TabbedPanelMod-MDH" FOLDED="false" ID="ID_696401721" BACKGROUND_COLOR="#99ccff" STYLE="rectangle" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="10 pt">
+<font SIZE="16"/>
 <hook NAME="MapStyle">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" save_modification_times="false" save_last_visited_node="default" show_note_icons="true" associatedTemplateLocation="template:/MarkdownHelper/MarkdownHelper%20template.mm" save_folding="save_folding_if_map_is_changed" fit_to_viewport="false"/>
 
@@ -103,14 +103,25 @@ blockquote {
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="README.MD" POSITION="bottom_or_right" ID="ID_253154217" LINK="README.MD"><richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown">
-<text># Dummy readme file
-
-justa a **dummy** markdown file
-</text></richcontent>
+<hook NAME="AutomaticEdgeColor" COUNTER="7" RULE="ON_BRANCH_CREATION"/>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      this mindmap requires the MarkdownHelper add-on to be edited properly.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="README.MD" POSITION="bottom_or_right" ID="ID_253154217" LINK="README.MD">
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/markdown"/>
 <edge COLOR="#7c0000"/>
-<node TEXT="README.MD" STYLE_REF="MarkdownHelperNode" ID="ID_1542077692" LINK="file:/C:/Users/efroh/GitHub/Freeplane_TabbedPanelMod/README.MD">
+</node>
+<node TEXT="README.MD" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1542077692" LINK="file:/C:/Users/efroh/GitHub/Freeplane_TabbedPanelMod/README.MD">
+<edge COLOR="#00007c"/>
 <attribute_layout NAME_WIDTH="135 pt" VALUE_WIDTH="40.5 pt"/>
 <attribute NAME="headersToUnderline" VALUE="0" OBJECT="org.freeplane.features.format.FormattedNumber|0|#0.####"/>
 <attribute NAME="hideFolded" VALUE="false"/>
@@ -126,7 +137,12 @@ justa a **dummy** markdown file
 <richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.document(node)</text></richcontent>
 <node TEXT="TabbedPanelMod Add-on" ID="ID_501079134">
-<node TEXT="This add-on changes the tabs in the tabbed panel (Tool panel) to the right and changes the labels to icons." ID="ID_974026164"/>
+<node TEXT="This add-on changes the tabbed panel (Tool panel) layout." ID="ID_974026164"/>
+<node TEXT="It places its tabs to the right and changes the labels to icons." ID="ID_1736000779"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1628265198"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
+<node TEXT="TabsToTheRight.png" POSITION="bottom_or_right" ID="ID_1507146399" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/TabsToTheRight.png"/>
+</node>
 <node TEXT="Menu:" ID="ID_678822760"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_861803648"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
@@ -193,7 +209,7 @@ justa a **dummy** markdown file
 </node>
 </node>
 <node TEXT="&#xa;----" ID="ID_348552161"/>
-<node TEXT="Additional information" ID="ID_1285069431">
+<node TEXT="Additional information" FOLDED="true" ID="ID_1285069431">
 <icon BUILTIN="emoji-1F53B"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_705860275"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
@@ -219,7 +235,6 @@ justa a **dummy** markdown file
 <node TEXT="&#xa;----" ID="ID_140783039"/>
 <node TEXT="Best regards," ID="ID_773119502"/>
 <node TEXT="edoFro" ID="ID_740651648"/>
-</node>
 </node>
 </node>
 </node>

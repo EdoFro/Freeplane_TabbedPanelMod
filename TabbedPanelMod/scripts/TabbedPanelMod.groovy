@@ -29,6 +29,7 @@ switch(TP.getTabPlacement()){
             def tw = []
             numTabs.times{ tw << null}
             TP.metaClass.tabWidths = tw
+            TP.tabWidths[TP.selectedIndex] = TP.width
         }
         if (TP.hasProperty('originalWidth')){
             TP.originalWidth = TP.width
@@ -87,6 +88,8 @@ def tabButton(num, toolTip){
                                         resizeTP(TP.tabWidths[num])
                                     } else if (TP.collapsed){
                                         resizeTP(TP.originalWidth)
+                                    } else {
+                                        TP.tabWidths[num] = TP.width
                                     }
                                     TP.collapsed = false
                                 }

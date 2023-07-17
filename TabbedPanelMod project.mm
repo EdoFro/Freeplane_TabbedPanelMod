@@ -362,23 +362,9 @@ before the actual namefilter setting)
 
 </text></richcontent>
 <node TEXT="files" ID="ID_1969083813">
-<node TEXT=".gitattributes" ID="ID_804444908"><richcontent TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      este debeía generarse automáticamente
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node TEXT="TabbedPanelMod" ID="ID_1304161959">
-<attribute NAME="script1" VALUE="def nodo = node&#xd;&#xa;def texto = nodo.text&#xd;&#xa;&#xd;&#xa;def nodos = nodo.find{it.text.contains(texto)}&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;def cambiarA = ui.showInputDialog(&#xd;&#xa;        nodo.delegate, &#xd;&#xa;        &apos;input new AddOn name (it will CamelCase it and delete spaces)&apos;, &#xd;&#xa;        &apos; my new add on example   &apos;&#xd;&#xa;    )?.trim()&#xd;&#xa;&#xd;&#xa;cambiarA = cambiarA.split(&apos; &apos;)*.capitalize().join()&#xd;&#xa;&#xd;&#xa;nodos.each{n -&gt;&#xd;&#xa;    n.text = n.text.replace(texto,cambiarA)&#xd;&#xa;}"/>
-</node>
+<node TEXT=".gitattributes" ID="ID_43647129" LINK=".gitattributes"/>
 <node TEXT="TabbedPanelMod" ID="ID_1425281966" LINK="TabbedPanelMod/">
-<node TEXT="lib" STYLE_REF="Organizador" ID="ID_1958296406">
+<node TEXT="lib" STYLE_REF="Organizador" FOLDED="true" ID="ID_1958296406">
 <node TEXT="src" ID="ID_1844927763" LINK="TabbedPanelMod/src/">
 <node TEXT="main" ID="ID_1344912241" LINK="TabbedPanelMod/src/main/">
 <node TEXT="groovy" ID="ID_648687903" LINK="TabbedPanelMod/src/main/groovy/"><richcontent TYPE="DETAILS">
@@ -464,7 +450,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="scripts" ID="ID_1954520087" LINK="TabbedPanelMod/scripts/"><richcontent TYPE="DETAILS">
+<node TEXT="scripts" FOLDED="true" ID="ID_1954520087" LINK="TabbedPanelMod/scripts/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -488,7 +474,7 @@ before the actual namefilter setting)
 </html></richcontent>
 </node>
 </node>
-<node TEXT="zips" ID="ID_26954450" LINK="TabbedPanelMod/zips/">
+<node TEXT="zips" FOLDED="true" ID="ID_26954450" LINK="TabbedPanelMod/zips/">
 <node TEXT="icons" ID="ID_1602437280" LINK="TabbedPanelMod/zips/icons/" VGAP_QUANTITY="2 px" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="DETAILS">
 <html>
   <head>
@@ -548,13 +534,9 @@ before the actual namefilter setting)
 <node TEXT="TabbedPanelMod" ID="ID_780159924" LINK="TabbedPanelMod/zips/templates/TabbedPanelMod/"/>
 </node>
 </node>
-<node TEXT="images" ID="ID_1648376623" LINK="TabbedPanelMod/images/">
-<node TEXT="tabbedPanelMod.svg" STYLE_REF="pendingTask" ID="ID_953508081">
-<node TEXT="TabbedPanelMod.svg" STYLE_REF="freshNew" POSITION="bottom_or_right" ID="ID_633498564" LINK="TabbedPanelMod/images/TabbedPanelMod.svg"/>
-</node>
-<node TEXT="TabbedPanelMod-screenshot-1.png" ID="ID_514650521">
-<node TEXT="128x77" ID="ID_528208629"/>
-</node>
+<node TEXT="images" FOLDED="true" ID="ID_1648376623" LINK="TabbedPanelMod/images/">
+<node TEXT="TabbedPanelMod.svg" ID="ID_633498564" LINK="TabbedPanelMod/images/TabbedPanelMod.svg"/>
+<node TEXT="TabbedPanelMod-screenshot-1.png" ID="ID_293559267" LINK="TabbedPanelMod/images/TabbedPanelMod-screenshot-1.png"/>
 <node TEXT="TabbedPanelMod.png" ID="ID_338501651">
 <node TEXT="53x32" ID="ID_1079195239"/>
 </node>
@@ -563,7 +545,7 @@ before the actual namefilter setting)
 </node>
 </node>
 <node TEXT="TabbedPanelMod.mm" ID="ID_842309458" LINK="TabbedPanelMod/TabbedPanelMod.mm"/>
-<node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_339327810"><richcontent TYPE="DETAILS">
+<node TEXT="generados automáticamente" STYLE_REF="Organizador" FOLDED="true" ID="ID_339327810"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -823,8 +805,7 @@ before the actual namefilter setting)
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="ver Github/lilive&#xa;ahí muestra un resumen" STYLE_REF="completedTask" ID="ID_659111842">
 <node TEXT="Install Freeplane (of course !)" ID="ID_1773468453"/>
 <node TEXT="Download the source" ID="ID_1362491575"/>
@@ -982,7 +963,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="resources" ID="ID_687946481" LINK="resources/">
+<node TEXT="resources" FOLDED="true" ID="ID_687946481" LINK="resources/">
 <node TEXT="Standard.png" ID="ID_781611361" LINK="resources/Standard.png"/>
 <node TEXT="TabsToTheRight.png" ID="ID_413585294" LINK="resources/TabsToTheRight.png"/>
 <node TEXT="minimizedClickedAgain.png" ID="ID_1509093809" LINK="resources/minimizedClickedAgain.png"/>
@@ -1180,10 +1161,10 @@ justa a **dummy** markdown file
   </body>
 </html></richcontent>
 </node>
-</node>
 <node TEXT="TabbedPanelMod project.mm" ID="ID_1474290422" LINK="TabbedPanelMod%20project.mm"/>
+</node>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1996504727">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleText&amp;#x7c;2|number:decimal:#0.####"/>
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;2|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE">
 <html>
   <head>
@@ -1191,7 +1172,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-07-16&#xa0;&#xa0;15:28:12
+      Inated:&#xa0;&#xa0;&#xa0;2023-07-17&#xa0;&#xa0;15:16:50
     </p>
     <p>
       
@@ -1206,10 +1187,10 @@ justa a **dummy** markdown file
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;3 new file(s) imported as node(s)&#xa0;
+      &#xa0;0 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
-      &#xa0;0 node(s) moved/renamed in drive
+      &#xa0;1 node(s) moved/renamed in drive
     </p>
     <p>
       &#xa0;0 node(s) couldn't be moved/renamed in drive (marked as 'notMovedRenamed')
@@ -1221,7 +1202,7 @@ justa a **dummy** markdown file
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      20 folders didn't need to be moved&#xa0;
+      21 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -1230,7 +1211,7 @@ justa a **dummy** markdown file
       
     </p>
     <p>
-      0.2 seconds
+      0.1 seconds
     </p>
     <p>
       
@@ -1251,7 +1232,7 @@ justa a **dummy** markdown file
 </html>
 </richcontent>
 </node>
-<node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443">
+<node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443"/>
 <node TEXT="pruebas" ID="ID_1494573795">
 <node TEXT="getComponent under mouse arrow" ID="ID_1582839785"><richcontent TYPE="NOTE">
 <html>
@@ -1815,171 +1796,6 @@ justa a **dummy** markdown file
 </html></richcontent>
 </node>
 </node>
-<node TEXT="pasos para crear AddOn" STYLE_REF="Organizador" ID="ID_880398082">
-<node TEXT="pasos AddOn" ID="ID_1183626046">
-<node TEXT="5 a 10" ID="ID_1935332404">
-<node TEXT="Create a new directory somewhere with the technical name of the add-on, myCoolAddOn." STYLE_REF="completedTask" ID="ID_1071362235" NUMBERED="true"/>
-<node TEXT="Save the new map to myCoolAddOn/myCoolAddOn.mm." STYLE_REF="completedTask" ID="ID_1560173871" NUMBERED="true"/>
-<node TEXT="Copy or move myCoolScript.groovy to myCoolAddOn/scripts/myCoolScript.groovy." ID="ID_1357134378" NUMBERED="true"/>
-<node TEXT="In the map create a new subnode of the scripts node with name myCoolScript.groovy." ID="ID_104783689" NUMBERED="true"><richcontent TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      no es necesario. lo hace el Build automáticamente
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node TEXT="Copy mycoolicon.png to zips/icons/mycoolicon.png." ID="ID_1959612934" NUMBERED="true"/>
-</node>
-<node TEXT="11 a 15" ID="ID_1571884594">
-<node TEXT="In the map create a new subnode of the zips node with name icons." ID="ID_1016754953" NUMBERED="true"/>
-<node TEXT="Invoke Tools &gt; Developer Tools &gt; Build add-on again. This will add the required attributes of the script node and proposes proper deinstall rules (just accept them when you are asked for it)." ID="ID_148327969" NUMBERED="true"/>
-<node TEXT="Fill the attributes of the myCoolScript.groovy node. The notes on the scripts node will help you to find the right attribute values. See also the section about menuLocation below." ID="ID_976587235" NUMBERED="true"/>
-<node TEXT="Save the map." ID="ID_648626495" NUMBERED="true"/>
-<node TEXT="Invoke Tools &gt; Developer Tools &gt; Package add-on for publication. This will create the file myCoolAddOn-v0.1.mm which can be installed via Tools &gt; Scripts &gt; Install Add-on (or via Tools &gt; Add-ons)." ID="ID_872194759" NUMBERED="true"/>
-</node>
-</node>
-<node TEXT="ayuda para crear config properties" FOLDED="true" ID="ID_1004047916">
-<node TEXT="Example" ID="ID_1769541583">
-<edge COLOR="#ff0000"/>
-<node TEXT="=&#xa;def textoNodo = &apos;&apos;&#xa;node.children.each{ nH -&gt;&#xa;    def texto = nH.text&#xa;    nH.children.eachWithIndex{ n, i -&gt;&#xa;        texto = texto.replace(&apos;$&apos;+ (i + 1).toString(),n.text)&#xa;    }&#xa;    textoNodo += texto +&apos;\n&apos;&#xa;}&#xa;return textoNodo" ID="ID_1333865201" MAX_WIDTH="20 cm" MIN_WIDTH="20 cm">
-<font NAME="Consolas"/>
-<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;$1&quot;&gt;" ID="ID_420737393" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="plugins" ID="ID_1788617493">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                           &lt;separator name = &quot;$1&quot;&gt;" ID="ID_1260479389" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="myAddOn" ID="ID_33465005">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                                    &lt;boolean name = &quot;$1&quot;/&gt;" ID="ID_1123461532" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="myAddOn_booleanPreference" ID="ID_1227564283">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                                    &lt;number  name = &quot;$1&quot; min=&quot;$2&quot; max=&quot;$3&quot; /&gt;" ID="ID_1969148447" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="myAddOn_numberPreference" ID="ID_624096140">
-<font NAME="Consolas"/>
-</node>
-<node TEXT="8" OBJECT="java.lang.Long|8" ID="ID_304909064">
-<font NAME="Consolas"/>
-</node>
-<node TEXT="25" OBJECT="java.lang.Long|25" ID="ID_1452115594">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                                    &lt;string name = &quot;$1&quot; /&gt;" ID="ID_1106321901" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="myAddOn_stringPreference" ID="ID_1340834915">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_310294911" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="=&#xa;def textoNodo = &apos;&apos;&#xa;node.children.each{ nH -&gt;&#xa;    def texto = nH.text&#xa;    nH.children.eachWithIndex{ n, i -&gt;&#xa;        texto = texto.replace(&apos;$&apos;+ (i + 1).toString(),n.text)&#xa;    }&#xa;    textoNodo += texto +&apos;\n&apos;&#xa;}&#xa;&#xa;textoNodo = textoNodo.replace(&apos;${name}&apos;,&apos;myAddOn&apos;)&#xa;&#xa;return textoNodo" ID="ID_1469253464" MAX_WIDTH="20 cm" MIN_WIDTH="20 cm">
-<font NAME="Consolas"/>
-<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;" ID="ID_1021369717" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-</node>
-<node TEXT="                           &lt;separator name = &quot;${name}&quot;&gt;" ID="ID_1231419666" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-</node>
-<node TEXT="                                    &lt;boolean name = &quot;${name}_$1&quot;/&gt;" ID="ID_1790013768" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="booleanPreference" ID="ID_1972567698">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                                    &lt;number  name = &quot;${name}_$1&quot; min=&quot;$2&quot; max=&quot;$3&quot; /&gt;" ID="ID_598184101" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="numberPreference" ID="ID_107322467">
-<font NAME="Consolas"/>
-</node>
-<node TEXT="8" OBJECT="java.lang.Long|8" ID="ID_767875852">
-<font NAME="Consolas"/>
-</node>
-<node TEXT="25" OBJECT="java.lang.Long|25" ID="ID_1023284580">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                                    &lt;string name = &quot;${name}_$1&quot; /&gt;" ID="ID_239489847" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-<node TEXT="stringPreference" ID="ID_1755902112">
-<font NAME="Consolas"/>
-</node>
-</node>
-<node TEXT="                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_736836439" MAX_WIDTH="17 cm" MIN_WIDTH="17 cm">
-<font NAME="Consolas"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="guardar mapas como &quot;lean&quot; map" ID="ID_1339114157"/>
-<node TEXT="cambiar imagen de logo" ID="ID_1651216508"/>
-</node>
-<node TEXT="pendientes" STYLE_REF="Organizador" FOLDED="true" ID="ID_1816056625">
-<node TEXT="inicializar" STYLE_REF="Organizador" ID="ID_1867654637">
-<node TEXT="crear fork en Github" ID="ID_1521235352"/>
-</node>
-<node TEXT="Funcionalidad" STYLE_REF="Organizador" ID="ID_1249631394">
-<node TEXT="incluir preferencias en Addon.mm" ID="ID_1730596422">
-<node TEXT="indicar properties" ID="ID_528161400"/>
-<node TEXT="indicar valores default" ID="ID_1348288519"/>
-<node TEXT="indicar traducciones" ID="ID_1239892427"/>
-</node>
-<node TEXT="llevar ajustes a panel de preferencias" ID="ID_200074343"/>
-</node>
-<node TEXT="documentación" STYLE_REF="Organizador" ID="ID_713548816">
-<node TEXT="actualizar wiki" ID="ID_1987705518"/>
-</node>
-<node TEXT="publicar" STYLE_REF="Organizador" ID="ID_600742222">
-<node TEXT="gradle build" ID="ID_1822838229"/>
-<node TEXT="git ignore de gradle Build" ID="ID_1123595342"/>
-<node TEXT="armar AddOn" ID="ID_1056700641">
-<node TEXT="revisar información de uninstall" ID="ID_109328920"/>
-<node TEXT="actualizar listado de cambios" ID="ID_1104496325"/>
-<node TEXT="poner bien nombres de scripts" ID="ID_1321405530"/>
-<node TEXT="agregar traducciones" ID="ID_699226806"/>
-<node TEXT="agregar historial de cambios" ID="ID_1789614458"/>
-<node TEXT="mejorar descripción de add On" ID="ID_1576077086"/>
-</node>
-<node TEXT="testear" ID="ID_1761996064"/>
-<node TEXT="agregar release en Github con archivo descargable" ID="ID_1854047582"/>
-<node TEXT="actualizar ReadMe" ID="ID_1674058926">
-<node TEXT="nuevas fumcionalidades" ID="ID_1079440253">
-<node TEXT="ver cambios en versiones" ID="ID_1457345594"/>
-</node>
-<node TEXT="link a último release" ID="ID_1325266430"/>
-<node TEXT="link a release de myTempScripts" ID="ID_937996897"/>
-<node TEXT="imágenes de funcionalidades" ID="ID_1724115816">
-<node TEXT="load con append" ID="ID_665957170"/>
-<node TEXT="tempScripts" ID="ID_1892777550"/>
-</node>
-<node TEXT="Agregar imágenes" ID="ID_811277067"/>
-<node TEXT="agregar descripción de nuevos comandos" ID="ID_1623978281"/>
-<node TEXT="agregar historial de cambios" ID="ID_1335836498"/>
-</node>
-<node TEXT="comunicar en Openforum" ID="ID_1938449974"/>
-<node TEXT="actualizar a listado de AddOns en FP wiki" ID="ID_1273427392">
-<node TEXT="agregar a listado de AddOns en FP wiki" ID="ID_1414351988"/>
-<node TEXT="usar addOn documentation de devTools" ID="ID_302037096"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT=".gitattributes" STYLE_REF="freshNew" ID="ID_43647129" LINK=".gitattributes"/>
 </node>
 </node>
 </map>

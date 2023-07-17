@@ -16,7 +16,6 @@ iconos = ['IconAction.emoji-1F3A8', 'IconAction.list', 'IconAction.emoji-1F4C5',
 swingBuilder =  new SwingBuilder()
 collapsedWidth = 40
 
-
 switch(TP.getTabPlacement()){
     case JTabbedPane.TOP:
         def numTabs = TP.tabCount
@@ -26,6 +25,7 @@ switch(TP.getTabPlacement()){
             TP.metaClass.collapsed = false
         }
         if (!TP.hasProperty('tabWidths')){
+        //if (!TP.hasProperty('tabWidths') || !TP.tabWidths ){ //this here is for testing purposes. can be commented/deleted, (and uncomment the previous line)
             def tw = []
             numTabs.times{ tw << null}
             TP.metaClass.tabWidths = tw
@@ -52,13 +52,13 @@ switch(TP.getTabPlacement()){
     case JTabbedPane.RIGHT:
         TP.tabCount.times{i ->  TP.setTabComponentAt(i,null)}
         TP.tabCount.times{i ->
-            TP.setTitleAt(i,TP.getToolTipTextAt(i))
             TP.setTitleAt(i, TP.getToolTipTextAt(i)?:TP.getTitleAt(i))
             TP.setToolTipTextAt(i,null)
         }
         TP.setTabPlacement(JTabbedPane.TOP)
         TP.collapsed = false
         resizeTP(TP.originalWidth)
+        //TP.tabWidths.clear() //this here is for testing purposes. can be commented/deleted
         break
     //default:
 
@@ -68,15 +68,11 @@ switch(TP.getTabPlacement()){
 return 'done'
 
 def tabButton(num, toolTip){
-    def boton = swingBuilder.button(
-        //text                : 'hola',
+    return swingBuilder.button(
         horizontalAlignment : SwingConstants.LEFT,
         icon                : getIcon(num,toolTip),
         toolTipText         : toolTip,
-        //preferredSize       : new Dimension(20,20),
-        //minimumSize         : minD,
         margin              : new Insets(0,0,0,0),
-        //border              : BorderFactory.createLineBorder(Color.BLUE),
         borderPainted       : false,
         opaque              : false,
         actionPerformed     : {e ->
@@ -95,8 +91,7 @@ def tabButton(num, toolTip){
                                     TP.collapsed = false
                                 }
                             }
-    )
-    return boton
+                    )
 }
 
 def getIcon(i,t){

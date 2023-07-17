@@ -53,6 +53,7 @@ switch(TP.getTabPlacement()){
         TP.tabCount.times{i ->  TP.setTabComponentAt(i,null)}
         TP.tabCount.times{i ->
             TP.setTitleAt(i,TP.getToolTipTextAt(i))
+            TP.setTitleAt(i, TP.getToolTipTextAt(i)?:TP.getTitleAt(i))
             TP.setToolTipTextAt(i,null)
         }
         TP.setTabPlacement(JTabbedPane.TOP)

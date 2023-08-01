@@ -450,7 +450,7 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="scripts" FOLDED="true" ID="ID_1954520087" LINK="TabbedPanelMod/scripts/"><richcontent TYPE="DETAILS">
+<node TEXT="scripts" ID="ID_1954520087" LINK="TabbedPanelMod/scripts/"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -473,8 +473,9 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 </node>
+<node TEXT="Tabbed panel mod" ID="ID_1422987138" LINK="menuitem:_addons.tabbedPanelMod.TabbedPanelMod_on_single_node"/>
 </node>
-<node TEXT="zips" FOLDED="true" ID="ID_26954450" LINK="TabbedPanelMod/zips/">
+<node TEXT="zips" ID="ID_26954450" LINK="TabbedPanelMod/zips/">
 <node TEXT="icons" ID="ID_1602437280" LINK="TabbedPanelMod/zips/icons/" VGAP_QUANTITY="2 px" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="DETAILS">
 <html>
   <head>
@@ -533,8 +534,58 @@ before the actual namefilter setting)
 </html></richcontent>
 <node TEXT="TabbedPanelMod" ID="ID_780159924" LINK="TabbedPanelMod/zips/templates/TabbedPanelMod/"/>
 </node>
+<node TEXT="scripts" ID="ID_909188939" LINK="TabbedPanelMod/zips/scripts/">
+<node TEXT="init" ID="ID_141510846" LINK="TabbedPanelMod/zips/scripts/init/">
+<node TEXT="TabbedPanelMod_init.groovy" ID="ID_1038991368" LINK="TabbedPanelMod/zips/scripts/init/TabbedPanelMod_init.groovy"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import org.freeplane.main.addons.AddOnsController
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def isTabbedPanelModAddOnActive = AddOnsController.getController().getInstalledAddOn('tabbedPanelMod')['active']
+    </p>
+    <p>
+      def runOnStartingFreeplane =&#xa0;&#xa0;config.getBooleanProperty('tabbedPanelMod_runOnStartingFreeplane',false)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      if(isTabbedPanelModAddOnActive &amp;&amp; runOnStartingFreeplane){
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;menuUtils.executeMenuItems(['addons.tabbedPanelMod.TabbedPanelMod_on_single_node'])
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
-<node TEXT="images" FOLDED="true" ID="ID_1648376623" LINK="TabbedPanelMod/images/">
+</node>
+</node>
+</node>
+<node TEXT="images" ID="ID_1648376623" LINK="TabbedPanelMod/images/">
 <node TEXT="TabbedPanelMod.svg" ID="ID_633498564" LINK="TabbedPanelMod/images/TabbedPanelMod.svg"/>
 <node TEXT="TabbedPanelMod-screenshot-1.png" ID="ID_293559267" LINK="TabbedPanelMod/images/TabbedPanelMod-screenshot-1.png"/>
 <node TEXT="TabbedPanelMod.png" ID="ID_338501651">
@@ -545,7 +596,7 @@ before the actual namefilter setting)
 </node>
 </node>
 <node TEXT="TabbedPanelMod.mm" ID="ID_842309458" LINK="TabbedPanelMod/TabbedPanelMod.mm"/>
-<node TEXT="generados automáticamente" STYLE_REF="Organizador" FOLDED="true" ID="ID_339327810"><richcontent TYPE="DETAILS">
+<node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_339327810"><richcontent TYPE="DETAILS">
 <html>
   <head>
     
@@ -560,6 +611,7 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 <node TEXT="versiones anteriores" STYLE_REF="Organizador" ID="ID_509161169"/>
+<node TEXT="TabbedPanelMod-v0.2.addon.mm" POSITION="bottom_or_right" ID="ID_1873617501" LINK="TabbedPanelMod/TabbedPanelMod-v0.2.addon.mm"/>
 <node TEXT="TabbedPanelMod-v0.1.addon.mm" POSITION="bottom_or_right" ID="ID_1694910110" LINK="TabbedPanelMod/TabbedPanelMod-v0.1.addon.mm"/>
 <node TEXT="TabbedPanelMod.mm.bak" POSITION="bottom_or_right" ID="ID_1277294252" LINK="TabbedPanelMod/TabbedPanelMod.mm.bak"/>
 <node TEXT="history.md" POSITION="bottom_or_right" ID="ID_1635185936" LINK="TabbedPanelMod/history.md"/>
@@ -1172,7 +1224,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-07-17&#xa0;&#xa0;15:16:50
+      Inated:&#xa0;&#xa0;&#xa0;2023-07-31&#xa0;&#xa0;19:43:39
     </p>
     <p>
       
@@ -1190,7 +1242,7 @@ justa a **dummy** markdown file
       &#xa0;0 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
-      &#xa0;1 node(s) moved/renamed in drive
+      &#xa0;0 node(s) moved/renamed in drive
     </p>
     <p>
       &#xa0;0 node(s) couldn't be moved/renamed in drive (marked as 'notMovedRenamed')
@@ -1202,7 +1254,7 @@ justa a **dummy** markdown file
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      21 folders didn't need to be moved&#xa0;
+      22 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -1232,7 +1284,16 @@ justa a **dummy** markdown file
 </html>
 </richcontent>
 </node>
-<node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443"/>
+<node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443">
+<node TEXT="colores Freeplane" ID="ID_574877018">
+<node TEXT="3C83C5" POSITION="bottom_or_right" ID="ID_1262950870"/>
+<node TEXT="d1d1d1" POSITION="bottom_or_right" ID="ID_856073408"/>
+</node>
+<node TEXT="sliding panel" FOLDED="true" ID="ID_1018810824">
+<node TEXT="https://www.codeproject.com/Articles/565425/Sliding-Panel-in-Java" ID="ID_1383503584" LINK="https://www.codeproject.com/Articles/565425/Sliding-Panel-in-Java"/>
+</node>
+<node TEXT="https://www.geeksforgeeks.org/java-swing-jtoolbar/" ID="ID_1043689230" LINK="https://www.geeksforgeeks.org/java-swing-jtoolbar/"/>
+</node>
 <node TEXT="pruebas" ID="ID_1494573795">
 <node TEXT="getComponent under mouse arrow" ID="ID_1582839785"><richcontent TYPE="NOTE">
 <html>
@@ -1794,6 +1855,629 @@ justa a **dummy** markdown file
     </p>
   </body>
 </html></richcontent>
+</node>
+<node TEXT="agrega Tab &quot;test&quot; con botones" ID="ID_381894890"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import groovy.swing.SwingBuilder
+    </p>
+    <p>
+      import org.freeplane.core.ui.components.FreeplaneToolBar
+    </p>
+    <p>
+      import org.freeplane.core.ui.AFreeplaneAction;
+    </p>
+    <p>
+      import javax.swing.SwingConstants;
+    </p>
+    <p>
+      import javax.swing.Icon;
+    </p>
+    <p>
+      import java.awt.Insets;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      sb = new SwingBuilder()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      TP = ui.getFreeplaneTabbedPanel()
+    </p>
+    <p>
+      //return TP
+    </p>
+    <p>
+      if (TP.tabCount&gt;= 5){TP.remove(4)}//;return
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def tb = new FreeplaneToolBar('myToolbar', SwingConstants.VERTICAL)
+    </p>
+    <p>
+      def i = 1
+    </p>
+    <p>
+      3.times{tb.add(creaBoton(i++))}
+    </p>
+    <p>
+      tb.addSeparator()
+    </p>
+    <p>
+      4.times{tb.add(creaBoton(i++))}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def pane = sb.panel()
+    </p>
+    <p>
+      pane.add(tb)
+    </p>
+    <p>
+      TP.addTab(&quot;test&quot;,pane)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //---- methods -----
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def creaBoton(j) {
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;def boton = sb.button(
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;text&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: &quot;texto $j&quot;,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;horizontalAlignment : SwingConstants.LEFT,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;icon&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: menuUtils.getMenuItemIcon(&quot;IconAction.TabbedPanelMod/02&quot;),
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;toolTipText&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: 'tt',
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;//preferredSize&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: prefDimension,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;//minimumSize&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: minD,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;margin&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: new Insets(10,12,10,12),
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;borderPainted&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: true,
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;actionPerformed&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: {c.statusInfo = j.toString() * 5}
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;)
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;return boton
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html></richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="ver si add-on está activo" ID="ID_714000285"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import org.freeplane.main.addons.AddOnsController
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def isTabbedPanelModAddOnActive = AddOnsController.getController().getInstalledAddOn('tabbedPanelMod')['active']
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="obtener datos de AddOn" ID="ID_101523590"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import org.freeplane.main.addons.AddOnProperties
+    </p>
+    <p>
+      import org.freeplane.main.addons.AddOnsController
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def nodo = node
+    </p>
+    <p>
+      def addOnProps = AddOnsController.getController().getInstalledAddOn('tabbedPanelMod')
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def props = ['scripts', 'homepage', 'addOnPropertiesFile', 'freeplaneVersionTo', 'name', 'updateUrl', 'defaultProperties', 'active', 'addOnType', 'freeplaneVersionFrom', 'latestVersionChangelogUrl', 'images', 'theme', 'deinstallationRules', 'latestVersionDownloadUrl', 'class', 'latestVersion', 'lib', 'version', 'license', 'nameKey', 'preferencesXml', 'translatedName', 'description', 'translations', 'author']
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      props.each{ p -&gt;
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;nodo.createChild(p).note = addOnProps[p].toString()
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="scripts" ID="ID_1300186951"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [TabbedPanelMod.groovy(ON_SINGLE_NODE/addons.tabbedPanelMod.TabbedPanelMod//menu_bar/edoTools/addons.tabbedPanelMod)]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="homepage" ID="ID_1822552805"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      https://github.com/EdoFro/Freeplane_TabbedPanelMod
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="addOnPropertiesFile" ID="ID_1021725229"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      C:\Users\efroh\AppData\Roaming\Freeplane\1.11.x\addons\tabbedPanelMod.script.xml
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="freeplaneVersionTo" ID="ID_398718397"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      null
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="name" ID="ID_1011584049"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      tabbedPanelMod
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="updateUrl" ID="ID_603878563"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      https://github.com/EdoFro/Freeplane_TabbedPanelMod/releases/latest/download/version.properties
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="defaultProperties" ID="ID_842308729"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [:]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="active" ID="ID_926696139"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      true
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="addOnType" ID="ID_1409511148"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      SCRIPT
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="freeplaneVersionFrom" ID="ID_1356734364"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      1.11.0
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="latestVersionChangelogUrl" ID="ID_955723284"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      null
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="images" ID="ID_1098468349"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [TabbedPanelMod.svg, TabbedPanelMod-screenshot-1.png]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="theme" ID="ID_815353816"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      false
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="deinstallationRules" ID="ID_1735732508"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [[delete, ${installationbase}/addons/tabbedPanelMod.script.xml], [delete, ${installationbase}/addons/tabbedPanelMod/scripts/TabbedPanelMod.groovy], [delete, ${installationbase}/icons/TabbedPanelMod/00.svg], [delete, ${installationbase}/icons/TabbedPanelMod/01.svg], [delete, ${installationbase}/icons/TabbedPanelMod/02.svg], [delete, ${installationbase}/icons/TabbedPanelMod/03.svg], [delete, ${installationbase}/icons/TabbedPanelMod/04.svg], [delete, ${installationbase}/icons/TabbedPanelMod/05.svg], [delete, ${installationbase}/icons/TabbedPanelMod/06.svg], [delete, ${installationbase}/icons/TabbedPanelMod/07.svg], [delete, ${installationbase}/icons/TabbedPanelMod/08.svg], [delete, ${installationbase}/icons/TabbedPanelMod/09.svg], [delete, ${installationbase}/icons/TabbedPanelMod/test.svg], [delete, ${installationbase}/icons/TabbedPanelMod/TabbedPanelMod.svg], [delete, ${installationbase}/resources/images/TabbedPanelMod.svg], [delete, ${installationbase}/resources/images/TabbedPanelMod-screenshot-1.png]]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="latestVersionDownloadUrl" ID="ID_892504907"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      null
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="class" ID="ID_683636549"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class org.freeplane.plugin.script.addons.ScriptAddOnProperties
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="latestVersion" ID="ID_1014810713"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="lib" ID="ID_1648123237"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      []
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="version" ID="ID_142686924"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      v0.2
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="license" ID="ID_263383893"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      MIT License
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Copyright (c) 2023 Eduardo Frohlich.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+    </p>
+    <p>
+      of this software and associated documentation files (the &quot;Software&quot;), to deal
+    </p>
+    <p>
+      in the Software without restriction, including without limitation the rights
+    </p>
+    <p>
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    </p>
+    <p>
+      copies of the Software, and to permit persons to whom the Software is
+    </p>
+    <p>
+      furnished to do so, subject to the following conditions:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      The above copyright notice and this permission notice shall be included in all
+    </p>
+    <p>
+      copies or substantial portions of the Software.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    </p>
+    <p>
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    </p>
+    <p>
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    </p>
+    <p>
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    </p>
+    <p>
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    </p>
+    <p>
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    </p>
+    <p>
+      SOFTWARE.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="nameKey" ID="ID_1454744782"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      addons.tabbedPanelMod
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="preferencesXml" ID="ID_1912815193"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      null
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="translatedName" ID="ID_511415201"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      TabbedPanelMod
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="description" ID="ID_763785524"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      This add-on changes the tabs in the tabbed panel (Tool panel) to the right and changes the labels to icons.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="translations" ID="ID_1007005955"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [en:[addons.tabbedPanelMod:TabbedPanelMod, addons.tabbedPanelMod.TabbedPanelMod:Tabbed panel mod]]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="author" ID="ID_926765166"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      edoFro
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 </node>
 </node>

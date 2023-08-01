@@ -10,6 +10,10 @@ Menu:
 
 - `Edo Tools->TabbedPanelMod->Tabbed panel mod`
 
+Video:
+
+https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150-4f62-af9a-8bd6d0e3dcfb
+
 ----
 
 <details><summary><h2>Features</h2></summary>

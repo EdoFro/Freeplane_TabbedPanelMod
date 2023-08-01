@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-12 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-9.75 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
@@ -78,7 +78,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
 <attribute NAME="name" VALUE="tabbedPanelMod"/>
-<attribute NAME="version" VALUE="v0.2"/>
+<attribute NAME="version" VALUE="v0.3"/>
 <attribute NAME="author" VALUE="edoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.11"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -192,13 +192,17 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="v0.1" ID="ID_1275061244">
+<node TEXT="v0.1" FOLDED="true" ID="ID_1275061244">
 <node TEXT="Release version" ID="ID_536932306"/>
 </node>
-<node TEXT="v0.2" ID="ID_1955243336">
+<node TEXT="v0.2" FOLDED="true" ID="ID_1955243336">
 <node TEXT="Added screen shot image" ID="ID_1752123880"/>
 <node TEXT="Modified the logic on how/when the widths of the panels get stored" ID="ID_69954858"/>
 <node TEXT="other minor mods" ID="ID_16041054"/>
+</node>
+<node TEXT="v0.3" ID="ID_92998378">
+<node TEXT="Added init script to change Tabbed Panel layout on Freplane&apos;s start up." ID="ID_1754942485"/>
+<node TEXT="Added runOnStartingFreeplane preference" ID="ID_315878793"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1289127140"><richcontent TYPE="NOTE">
@@ -329,6 +333,9 @@
   </body>
 </html>
 </richcontent>
+<attribute_layout NAME_WIDTH="105 pt" VALUE_WIDTH="47.25 pt"/>
+<attribute NAME="runOnStartingFreeplane" VALUE="boolean"/>
+<node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;boolean name = &quot;${name}_runOnStartingFreeplane&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_1611467890" MAX_WIDTH="20 cm"/>
 </node>
 <node TEXT="default.properties" POSITION="top_or_left" ID="ID_674735877"><richcontent TYPE="NOTE">
 <html>
@@ -350,6 +357,8 @@
   </body>
 </html>
 </richcontent>
+<attribute_layout NAME_WIDTH="139.5 pt" VALUE_WIDTH="33 pt"/>
+<attribute NAME="${name}_runOnStartingFreeplane" VALUE="true"/>
 </node>
 <node TEXT="translations" POSITION="top_or_left" ID="ID_797481876"><richcontent TYPE="NOTE">
 <html>
@@ -384,9 +393,12 @@
 </html>
 </richcontent>
 <node TEXT="en" POSITION="top_or_left" ID="ID_21308156">
-<attribute_layout NAME_WIDTH="141.75 pt" VALUE_WIDTH="84.75 pt"/>
+<attribute_layout NAME_WIDTH="207.74999 pt" VALUE_WIDTH="245.99999 pt"/>
 <attribute NAME="addons.${name}" VALUE="TabbedPanelMod"/>
 <attribute NAME="addons.${name}.TabbedPanelMod" VALUE="Tabbed panel mod"/>
+<attribute NAME="OptionPanel.separator.${name}" VALUE="TabbedPanelMod"/>
+<attribute NAME="OptionPanel.${name}_runOnStartingFreeplane" VALUE="Apply on start up"/>
+<attribute NAME="OptionPanel.${name}_runOnStartingFreeplane.tooltip" VALUE="Apply right tabbed panel automatically when starting Freeplane"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="top_or_left" ID="ID_1076964914"><richcontent TYPE="NOTE">
@@ -417,6 +429,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/icons/TabbedPanelMod/TabbedPanelMod.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/TabbedPanelMod.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/TabbedPanelMod-screenshot-1.png"/>
+<attribute NAME="delete" VALUE="${installationbase}/scripts/init/TabbedPanelMod_init.groovy"/>
 </node>
 <node TEXT="scripts" POSITION="bottom_or_right" ID="ID_280612921"><richcontent TYPE="NOTE">
 <html>
@@ -624,6 +637,7 @@
 <node TEXT="doc" ID="ID_1301687080"/>
 <node TEXT="icons" ID="ID_874292414"/>
 <node TEXT="templates" ID="ID_1143550799"/>
+<node TEXT="scripts" ID="ID_162715608"/>
 </node>
 <node TEXT="images" POSITION="bottom_or_right" ID="ID_1352144121"><richcontent TYPE="NOTE">
 <html>

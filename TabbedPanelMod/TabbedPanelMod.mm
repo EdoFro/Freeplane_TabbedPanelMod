@@ -200,13 +200,16 @@
 <node TEXT="Modified the logic on how/when the widths of the panels get stored" ID="ID_69954858"/>
 <node TEXT="other minor mods" ID="ID_16041054"/>
 </node>
-<node TEXT="v0.3" ID="ID_92998378">
+<node TEXT="v0.3" FOLDED="true" ID="ID_92998378">
 <node TEXT="Added init script to change Tabbed Panel layout on Freplane&apos;s start up." ID="ID_1754942485"/>
 <node TEXT="Added runOnStartingFreeplane preference" ID="ID_315878793"/>
 </node>
 <node TEXT="v0.4" ID="ID_1757710277">
 <node TEXT="added boolean property &quot;isModded&quot; to TabPanel" ID="ID_1090337022">
 <node TEXT="is true if addon have been applied" ID="ID_1274695250"/>
+</node>
+<node TEXT="created TPM static class to use it by others addons or scripts" ID="ID_1324729161">
+<node TEXT="method modifyTab(int tabIndex, String iconName) changes the title to a button with the desired Freeplane icon" ID="ID_725318856"/>
 </node>
 </node>
 </node>
@@ -365,7 +368,7 @@
 <attribute_layout NAME_WIDTH="144 pt" VALUE_WIDTH="37.5 pt"/>
 <attribute NAME="${name}_runOnStartingFreeplane" VALUE="true"/>
 </node>
-<node TEXT="translations" FOLDED="true" POSITION="top_or_left" ID="ID_797481876"><richcontent TYPE="NOTE">
+<node TEXT="translations" POSITION="top_or_left" ID="ID_797481876"><richcontent TYPE="NOTE">
 <html>
   <head>
     

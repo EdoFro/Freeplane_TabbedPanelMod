@@ -1,7 +1,7 @@
 import org.freeplane.main.addons.AddOnsController
 
 //is addon active?
-def isTabbedPanelModAddOnActive = AddOnsController.getController().getInstalledAddOn('tabbedPanelMod')['active']
+def isTabbedPanelModAddOnActive = AddOnsController.getController().getInstalledAddOn('tabbedPanelMod')?['active']?:false
 
 //user wants to execute command on start up (user preferences)
 def runOnStartingFreeplane =  config.getBooleanProperty('tabbedPanelMod_runOnStartingFreeplane',false)

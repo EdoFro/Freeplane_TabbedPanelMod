@@ -1,5 +1,10 @@
 # History
 
+## v0.4
+
+* added boolean property "isModded" to TabPanel
+  * is true if addon have been applied
+
 ## v0.3
 
 * Added init script to change Tabbed Panel layout on Freplane's start up.

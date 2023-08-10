@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-9 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-6 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
@@ -76,9 +76,9 @@
 </stylenode>
 </map_styles>
 </hook>
-<attribute_layout NAME_WIDTH="99.75 pt" VALUE_WIDTH="228.74999 pt"/>
+<attribute_layout NAME_WIDTH="104.25 pt" VALUE_WIDTH="233.24999 pt"/>
 <attribute NAME="name" VALUE="tabbedPanelMod"/>
-<attribute NAME="version" VALUE="v0.3"/>
+<attribute NAME="version" VALUE="v0.4"/>
 <attribute NAME="author" VALUE="edoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.11"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -158,7 +158,8 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="description" POSITION="top_or_left" ID="ID_522652279"><richcontent TYPE="NOTE">
 <html>
   <head>
@@ -175,7 +176,8 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="This add-on changes the tabs in the tabbed panel (Tool panel) to the right and changes the labels to icons." ID="ID_974026164"/>
 </node>
 <node TEXT="changes" POSITION="top_or_left" ID="ID_1401795979"><richcontent TYPE="NOTE">
@@ -188,7 +190,8 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="v0.1" FOLDED="true" ID="ID_1275061244">
 <node TEXT="Release version" ID="ID_536932306"/>
 </node>
@@ -200,6 +203,11 @@
 <node TEXT="v0.3" ID="ID_92998378">
 <node TEXT="Added init script to change Tabbed Panel layout on Freplane&apos;s start up." ID="ID_1754942485"/>
 <node TEXT="Added runOnStartingFreeplane preference" ID="ID_315878793"/>
+</node>
+<node TEXT="v0.4" ID="ID_1757710277">
+<node TEXT="added boolean property &quot;isModded&quot; to TabPanel" ID="ID_1090337022">
+<node TEXT="is true if addon have been applied" ID="ID_1274695250"/>
+</node>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1289127140"><richcontent TYPE="NOTE">
@@ -218,10 +226,11 @@
       The License text has to be entered as a child of the <i>'license'</i>&#xa0;node, either as plain text or as HTML.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="MIT License&#xa;&#xa;Copyright (c) 2023 Eduardo Frohlich.&#xa;&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy&#xa;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xa;in the Software without restriction, including without limitation the rights&#xa;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xa;copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;&#xa;The above copyright notice and this permission notice shall be included in all&#xa;copies or substantial portions of the Software.&#xa;&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xa;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xa;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xa;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xa;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#xa;SOFTWARE." ID="ID_1443054371" MAX_WIDTH="18 cm"/>
 </node>
-<node TEXT="preferences.xml" POSITION="top_or_left" ID="ID_463716432"><richcontent TYPE="NOTE">
+<node TEXT="preferences.xml" FOLDED="true" POSITION="top_or_left" ID="ID_463716432"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -327,7 +336,8 @@
       </tr>
     </table>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <attribute_layout NAME_WIDTH="105 pt" VALUE_WIDTH="47.25 pt"/>
 <attribute NAME="runOnStartingFreeplane" VALUE="boolean"/>
 <node TEXT="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xa;&lt;preferences_structure&gt;&#xa;         &lt;tabbed_pane&gt;&#xa;                  &lt;tab name=&quot;plugins&quot;&gt;&#xa;                            &lt;separator name = &quot;${name}&quot;&gt;&#xa;                                    &lt;boolean name = &quot;${name}_runOnStartingFreeplane&quot;/&gt;&#xa;                           &lt;/separator&gt;&#xa;                  &lt;/tab&gt;&#xa;         &lt;/tabbed_pane&gt;&#xa;&lt;/preferences_structure&gt;" ID="ID_1611467890" MAX_WIDTH="20 cm"/>
@@ -350,11 +360,12 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
-<attribute_layout NAME_WIDTH="139.5 pt" VALUE_WIDTH="33 pt"/>
+</html>
+</richcontent>
+<attribute_layout NAME_WIDTH="144 pt" VALUE_WIDTH="37.5 pt"/>
 <attribute NAME="${name}_runOnStartingFreeplane" VALUE="true"/>
 </node>
-<node TEXT="translations" POSITION="top_or_left" ID="ID_797481876"><richcontent TYPE="NOTE">
+<node TEXT="translations" FOLDED="true" POSITION="top_or_left" ID="ID_797481876"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -384,9 +395,10 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="en" POSITION="top_or_left" ID="ID_21308156">
-<attribute_layout NAME_WIDTH="207.74999 pt" VALUE_WIDTH="245.99999 pt"/>
+<attribute_layout NAME_WIDTH="212.24999 pt" VALUE_WIDTH="250.49999 pt"/>
 <attribute NAME="addons.${name}" VALUE="TabbedPanelMod"/>
 <attribute NAME="addons.${name}.TabbedPanelMod" VALUE="Tabbed panel mod"/>
 <attribute NAME="OptionPanel.separator.${name}" VALUE="TabbedPanelMod"/>
@@ -404,7 +416,8 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/TabbedPanelMod.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/icons/TabbedPanelMod/00.svg"/>
@@ -422,6 +435,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/TabbedPanelMod.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/TabbedPanelMod-screenshot-1.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/scripts/init/TabbedPanelMod_init.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/TabbedPanelMod.jar"/>
 </node>
 <node TEXT="scripts" POSITION="bottom_or_right" ID="ID_280612921"><richcontent TYPE="NOTE">
 <html>
@@ -538,9 +552,10 @@
       &#xa0;&#xa0;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="TabbedPanelMod.groovy" ID="ID_908031424">
-<attribute_layout NAME_WIDTH="183.74999 pt" VALUE_WIDTH="141.75 pt"/>
+<attribute_layout NAME_WIDTH="188.24999 pt" VALUE_WIDTH="146.25 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.TabbedPanelMod"/>
 <attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
@@ -586,7 +601,9 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+<node TEXT="TabbedPanelMod.jar" ID="ID_672848344"/>
 </node>
 <node TEXT="zips" POSITION="bottom_or_right" ID="ID_151170586"><richcontent TYPE="NOTE">
 <html>
@@ -622,7 +639,8 @@
       &#xa0;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="doc" ID="ID_1301687080"/>
 <node TEXT="icons" ID="ID_874292414"/>
 <node TEXT="templates" ID="ID_1143550799"/>
@@ -658,7 +676,8 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&#xa0;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="TabbedPanelMod.svg" ID="ID_289437820"/>
 <node TEXT="TabbedPanelMod-screenshot-1.png" ID="ID_293559267"/>
 </node>
@@ -670,7 +689,8 @@
   <body>
     Direct links to menu commands
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="Build add-on" ID="ID_784051402" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="Package add-on for publication" ID="ID_860406805" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_1656585831" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>

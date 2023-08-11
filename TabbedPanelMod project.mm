@@ -1,7 +1,7 @@
 <map version="freeplane 1.11.5">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <attribute_registry SHOW_ATTRIBUTES="selected"/>
-<node TEXT="Tabbed Panel Mod" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_679526461" LINK="../../OneDrive/Documentos/Mochila/Freeplane/ScriptsEnComputadorYDesarrollosEdo%20-%20mochila.mm"><hook NAME="MapStyle" background="#f9f9f8">
+<node TEXT="Tabbed Panel Mod" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_679526461" LINK="../../OneDrive/Documentos/Mochila/Freeplane/ScriptsEnComputadorYDesarrollosEdo%20-%20mochila.mm"><hook NAME="MapStyle" background="#f9f9f8" zoom="0.8">
     <conditional_styles>
         <conditional_style ACTIVE="true" STYLE_REF="customMenuPackage" LAST="false">
             <attribute_exists_condition ATTRIBUTE="tbActions"/>
@@ -379,6 +379,7 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 <node TEXT="agregar classes .groovy para crear librería" STYLE_REF="pendingTask" ID="ID_989699600"/>
+<node TEXT="TPM.groovy" STYLE_REF="freshNew" ID="ID_169629068" LINK="TabbedPanelMod/src/main/groovy/TPM.groovy"/>
 </node>
 <node TEXT="java" ID="ID_580696252" LINK="TabbedPanelMod/src/main/java/"><richcontent TYPE="DETAILS">
 <html>
@@ -448,6 +449,7 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 </node>
+<node TEXT="TabbedPanelMod.jar" STYLE_REF="freshNew" ID="ID_1028275102" LINK="TabbedPanelMod/lib/TabbedPanelMod.jar"/>
 </node>
 </node>
 <node TEXT="scripts" ID="ID_1954520087" LINK="TabbedPanelMod/scripts/"><richcontent TYPE="DETAILS">
@@ -582,7 +584,6 @@ before the actual namefilter setting)
 </node>
 </node>
 </node>
-<node TEXT="zips.iml" STYLE_REF="freshNew" ID="ID_1297790805" LINK="TabbedPanelMod/zips/zips.iml"/>
 </node>
 <node TEXT="images" ID="ID_1648376623" LINK="TabbedPanelMod/images/">
 <node TEXT="TabbedPanelMod.svg" ID="ID_633498564" LINK="TabbedPanelMod/images/TabbedPanelMod.svg"/>
@@ -612,411 +613,24 @@ before the actual namefilter setting)
 <node TEXT="history.md" POSITION="bottom_or_right" ID="ID_1635185936" LINK="TabbedPanelMod/history.md"/>
 <node TEXT="version.properties" POSITION="bottom_or_right" ID="ID_756696516" LINK="TabbedPanelMod/version.properties"/>
 <node TEXT="TabbedPanelMod.mm.bak" POSITION="bottom_or_right" ID="ID_1277294252" LINK="TabbedPanelMod/TabbedPanelMod.mm.bak"/>
-<node TEXT="TabbedPanelMod-v0.3.addon.mm" STYLE_REF="freshNew" POSITION="bottom_or_right" ID="ID_1365249928" LINK="TabbedPanelMod/TabbedPanelMod-v0.3.addon.mm"/>
-<node TEXT="TabbedPanelMod-v0.2.addon.mm" POSITION="bottom_or_right" ID="ID_1873617501" LINK="TabbedPanelMod/TabbedPanelMod-v0.2.addon.mm"/>
-<node TEXT="TabbedPanelMod-v0.1.addon.mm" POSITION="bottom_or_right" ID="ID_1694910110" LINK="TabbedPanelMod/TabbedPanelMod-v0.1.addon.mm"/>
-<node TEXT="versiones anteriores" STYLE_REF="Organizador" POSITION="bottom_or_right" ID="ID_509161169"/>
-<node TEXT="TabbedPanelMod-v0.4.addon.mm" STYLE_REF="freshNew" POSITION="bottom_or_right" ID="ID_817706156" LINK="TabbedPanelMod/TabbedPanelMod-v0.4.addon.mm"/>
+<node TEXT="TabbedPanelMod-v0.4.addon.mm" POSITION="bottom_or_right" ID="ID_817706156" LINK="TabbedPanelMod/TabbedPanelMod-v0.4.addon.mm"/>
+<node TEXT="versiones anteriores" STYLE_REF="Organizador" FOLDED="true" POSITION="bottom_or_right" ID="ID_509161169">
+<node TEXT="TabbedPanelMod-v0.3.addon.mm" ID="ID_1365249928" LINK="TabbedPanelMod/TabbedPanelMod-v0.3.addon.mm"/>
+<node TEXT="TabbedPanelMod-v0.2.addon.mm" ID="ID_1873617501" LINK="TabbedPanelMod/TabbedPanelMod-v0.2.addon.mm"/>
+<node TEXT="TabbedPanelMod-v0.1.addon.mm" ID="ID_1694910110" LINK="TabbedPanelMod/TabbedPanelMod-v0.1.addon.mm"/>
 </node>
-<node TEXT="build.gradle" FOLDED="true" ID="ID_167800917">
-<icon BUILTIN="pencil"/>
-<richcontent TYPE="NOTE">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      //groovyConsole
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      apply plugin: 'groovy'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      targetCompatibility='1.8'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      // 1. I have to define which freeplane version is going to be used to look at the libreries (freeplane and groovy)
-    </p>
-    <p>
-      def FPversion = 'instaled'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def freeplaneDirs = [
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;instaled&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: &quot;C:/Program Files/Freeplane&quot;,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;protableApps : &quot;C:/PortableApps/FreeplanePortable/App/Freeplane&quot;,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;v9_15&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: &quot;C:/Freeplane/freeplane-1.9.15-pre01&quot;,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;v10_1&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;: &quot;C:/Freeplane/freeplane-1.10.1-pre05&quot;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;]
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def freeplaneDir = freeplaneDirs[FPversion]
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      def groovyVersion = '4.0.1'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def isNewerGroovy = groovyVersion.startsWith('4.')
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;def groovyGroupId = isNewerGroovy?'org.apache.groovy':'org.codehaus.groovy'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      libsDirName = &quot;${rootDir}/lib&quot;
-    </p>
-    <p>
-      clean.doFirst { delete &quot;${rootDir}/lib&quot; } // para eliminar todas las .jar
-    </p>
-    <p>
-      //clean.doFirst { delete &quot;${rootDir}/lib/Tutorial-o-Matic.jar&quot; } //para eliminar sólo una de las .jar y que no me borrara markedj ni jsoup
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      repositories {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;mavenCentral()
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;flatDir name: 'localGitDepsRepository',
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;dirs: [
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&quot;${freeplaneDir}&quot;,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&quot;${freeplaneDir}/core/org.freeplane.core/lib&quot;,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&quot;${freeplaneDir}/plugins/org.freeplane.plugin.script/lib&quot;,
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// &quot;${freeplaneDir}/plugins/org.freeplane.plugin.markdown/lib&quot;, // para incluir markedj.jar
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;// &quot;${rootDir}/lib&quot; //ahí puse markedj y jsoup
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;]
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      // I had this error:
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;// Could not find method compile() for arguments [{name=freeplanelauncher}] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler
-    </p>
-    <p>
-      // answer:
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;// https://stackoverflow.com/questions/69733508/couldnt-find-compile-for-arguments-directory-libs-on-object-of-type-org-g
-    </p>
-    <p>
-      &#xa0;&#xa0;
-    </p>
-    <p>
-      dependencies {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;implementation name : 'freeplanelauncher'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;implementation name : 'freeplaneviewer'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;implementation group: 'org.freeplane.core',&#xa0;&#xa0;&#xa0;name: 'freeplaneeditor', version:&quot;+&quot;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;implementation group: 'org.freeplane.script', name: 'plugin', version: '+'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;if(isNewerGroovy){
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;implementation platform (&quot;${groovyGroupId}:groovy-all:${groovyVersion}&quot;.toString()) {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-test'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-test-junit5'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-testng'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-ant'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-docgenerator'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-groovydoc'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-cli-commons'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-cli-picocli'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;} else {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;implementation (&quot;${groovyGroupId}:groovy-all:${groovyVersion}&quot;.toString()) {
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-test'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-test-junit5'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-testng'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-ant'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-docgenerator'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-groovydoc'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-cli-commons'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;exclude group:groovyGroupId, module:'groovy-cli-picocli'
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;}&#xa0;&#xa0;
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;}
-    </p>
-    <p>
-      &#xa0;&#xa0;&#xa0;&#xa0;implementation &quot;${groovyGroupId}:groovy-dateutil:${groovyVersion}&quot;.toString()
-    </p>
-    <p>
-      }
-    </p>
-  </body>
-</html></richcontent>
-<node TEXT="ver Github/lilive&#xa;ahí muestra un resumen" STYLE_REF="completedTask" ID="ID_659111842">
-<node TEXT="Install Freeplane (of course !)" ID="ID_1773468453"/>
-<node TEXT="Download the source" ID="ID_1362491575"/>
-<node TEXT="Install gradle" ID="ID_445217147"/>
-<node TEXT="Open build.gradle with a text editor and modify the paths in repositories.dirs[] to point to your Freeplane installation" STYLE_REF="pendingTask" ID="ID_1226897009"/>
-<node TEXT="Get a command prompt at the root of the sources folder" STYLE_REF="pendingTask" ID="ID_1014016931"/>
-<node TEXT="gradle build will create the file lib/bookmarks.jar" STYLE_REF="pendingTask" ID="ID_1632818018"/>
-</node>
-<node TEXT="Revisar build.gradle" STYLE_REF="maybeTask" ID="ID_1734378059">
-<node TEXT="How to set-up IDE for add-on with build.gradle?" ID="ID_1381345362" LINK="https://sourceforge.net/p/freeplane/discussion/758437/thread/ccb0ecb6e5/"/>
-<node TEXT="#3027 Gradle plugin not working when adding dependencies to add-on build.gradle" FOLDED="true" ID="ID_108220174" LINK="https://sourceforge.net/p/freeplane/bugs/3027/">
-<node TEXT="https://sourceforge.net/u/haaihenkie/profile/" ID="ID_1275410501" LINK="https://sourceforge.net/u/haaihenkie/profile/"/>
+<node TEXT="gradle" STYLE_REF="Organizador" FOLDED="true" POSITION="bottom_or_right" ID="ID_1286931837">
+<node TEXT="gradle" ID="ID_1277474861" LINK="TabbedPanelMod/gradle/">
+<node TEXT="wrapper" ID="ID_1508388944" LINK="TabbedPanelMod/gradle/wrapper/">
+<node TEXT="gradle-wrapper.jar" ID="ID_608615230" LINK="TabbedPanelMod/gradle/wrapper/gradle-wrapper.jar"/>
+<node TEXT="gradle-wrapper.properties" ID="ID_182771284" LINK="TabbedPanelMod/gradle/wrapper/gradle-wrapper.properties"/>
 </node>
 </node>
-<node TEXT="build.gradle" ID="ID_1803955080"><richcontent TYPE="NOTE">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      buildscript {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;repositories {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maven { url &quot;http://dl.bintray.com/freeplane/freeplane&quot; }
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;dependencies {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classpath 'org.freeplane:gradle-freeplane-plugin:0.3'
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;}
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      repositories {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;mavenCentral()
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      apply plugin: 'org.freeplane.gradle-freeplane-plugin'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      freeplane {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// mandatory, freeplane installation directory.
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// In this example it is taken from system environment.
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;freeplaneDirectory = System.env.FREEPLANE_DIR
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// optional, addon source directory
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// addonSourceDirectory = 'src/addon'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// optional, to be set only if more then one mind map file in the addon source directory
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;addonDefinitionMindMapFileName = 'wikdShell.mm'
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// optional, includes
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// includes = ['**/*']
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// optional, excludes
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// excludes = ['**/*.bak', '**/~*', '**/$~*.mm~']
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// optional, max heap size for freeplane
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;// maxHeapSize = '1024m'
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-    <p>
-      jar {
-    </p>
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;archiveFileName = 'wikdshell.jar'
-    </p>
-    <p>
-      }
-    </p>
-    <p>
-      
-    </p>
-  </body>
-</html></richcontent>
-<richcontent TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      otra version
-    </p>
-  </body>
-</html></richcontent>
-<node TEXT="OJO:REVISAR: ES DISTINTO!!!" STYLE_REF="pendingTask" ID="ID_833249884"/>
+<node TEXT="gradlew" ID="ID_1690424754" LINK="TabbedPanelMod/gradlew"/>
+<node TEXT="gradlew.bat" ID="ID_1211452393" LINK="TabbedPanelMod/gradlew.bat"/>
 </node>
 </node>
-<node TEXT="TabbedPanelMod.iml" STYLE_REF="freshNew" ID="ID_753324589" LINK="TabbedPanelMod/TabbedPanelMod.iml"/>
-<node TEXT="build.gradle" STYLE_REF="freshNew" ID="ID_1220697041" LINK="TabbedPanelMod/build.gradle"/>
+<node TEXT="build.gradle" ID="ID_1220697041" LINK="TabbedPanelMod/build.gradle"/>
 </node>
 <node TEXT="resources" FOLDED="true" ID="ID_687946481" LINK="resources/">
 <node TEXT="Standard.png" ID="ID_781611361" LINK="resources/Standard.png"/>
@@ -1219,7 +833,7 @@ justa a **dummy** markdown file
 <node TEXT="TabbedPanelMod project.mm" ID="ID_1474290422" LINK="TabbedPanelMod%20project.mm"/>
 </node>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1996504727">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleText&amp;#x7c;2|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE">
 <html>
   <head>
@@ -1227,7 +841,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-08-09&#xa0;&#xa0;15:30:12
+      Inated:&#xa0;&#xa0;&#xa0;2023-08-11&#xa0;&#xa0;00:52:49
     </p>
     <p>
       
@@ -1242,7 +856,7 @@ justa a **dummy** markdown file
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;5 new file(s) imported as node(s)&#xa0;
+      &#xa0;0 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
       &#xa0;0 node(s) moved/renamed in drive
@@ -1257,7 +871,7 @@ justa a **dummy** markdown file
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      22 folders didn't need to be moved&#xa0;
+      27 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -1266,7 +880,7 @@ justa a **dummy** markdown file
       
     </p>
     <p>
-      0.4 seconds
+      0.1 seconds
     </p>
     <p>
       
@@ -1284,9 +898,12 @@ justa a **dummy** markdown file
       No failed operation in drive
     </p>
   </body>
-</html></richcontent>
-<node TEXT="TabbedPanelMod" ID="ID_1810323965" LINK="#ID_1425281966">
-<node TEXT="zips" ID="ID_444871934" LINK="#ID_26954450"/>
+</html>
+</richcontent>
+<node TEXT="TabbedPanelMod" ID="ID_486066267" LINK="TabbedPanelMod/">
+<node TEXT="src" ID="ID_1682335685" LINK="TabbedPanelMod/src/">
+<node TEXT="main" ID="ID_880317617" LINK="TabbedPanelMod/src/main/"/>
+</node>
 </node>
 </node>
 <node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443">
@@ -1332,8 +949,7 @@ justa a **dummy** markdown file
       add-on properties
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="OP_CONFIGURE" ID="ID_342382516"><richcontent TYPE="NOTE">
 <html>
   <head>
@@ -1347,8 +963,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="OP_DEACTIVATE" ID="ID_713024266"><richcontent TYPE="NOTE">
 <html>
@@ -1363,8 +978,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="OP_ACTIVATE" ID="ID_140939948"><richcontent TYPE="NOTE">
 <html>
@@ -1379,8 +993,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="OP_DEINSTALL" ID="ID_1934723312"><richcontent TYPE="NOTE">
 <html>
@@ -1395,8 +1008,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="scripts" ID="ID_41981217"><richcontent TYPE="NOTE">
 <html>
@@ -1411,8 +1023,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="lib" ID="ID_456989928"><richcontent TYPE="NOTE">
 <html>
@@ -1427,8 +1038,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="active" ID="ID_1282466186"><richcontent TYPE="NOTE">
 <html>
@@ -1443,8 +1053,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="addOnPropertiesFile" ID="ID_1216435323"><richcontent TYPE="NOTE">
 <html>
@@ -1459,8 +1068,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="addOnType" ID="ID_1882205849"><richcontent TYPE="NOTE">
 <html>
@@ -1475,8 +1083,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="author" ID="ID_529127290"><richcontent TYPE="NOTE">
 <html>
@@ -1491,8 +1098,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="class" ID="ID_378086430"><richcontent TYPE="NOTE">
 <html>
@@ -1507,8 +1113,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="defaultProperties" ID="ID_552044564"><richcontent TYPE="NOTE">
 <html>
@@ -1526,8 +1131,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="deinstallationRules" ID="ID_1217173935"><richcontent TYPE="NOTE">
 <html>
@@ -1644,8 +1248,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="description" ID="ID_368998743"><richcontent TYPE="NOTE">
 <html>
@@ -1660,8 +1263,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="freeplaneVersionFrom" ID="ID_1701854952"><richcontent TYPE="NOTE">
 <html>
@@ -1676,8 +1278,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="freeplaneVersionTo" ID="ID_1964787053"><richcontent TYPE="NOTE">
 <html>
@@ -1692,8 +1293,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="homepage" ID="ID_1091564007"><richcontent TYPE="NOTE">
 <html>
@@ -1708,8 +1308,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="images" ID="ID_1093346508"><richcontent TYPE="NOTE">
 <html>
@@ -1730,8 +1329,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="latestVersion" ID="ID_1778468990"><richcontent TYPE="NOTE">
 <html>
@@ -1746,8 +1344,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="latestVersionChangelogUrl" ID="ID_1588245339"><richcontent TYPE="NOTE">
 <html>
@@ -1762,8 +1359,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="latestVersionDownloadUrl" ID="ID_1728490256"><richcontent TYPE="NOTE">
 <html>
@@ -1778,8 +1374,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="license" ID="ID_253014273"><richcontent TYPE="NOTE">
 <html>
@@ -1854,8 +1449,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="name" ID="ID_1914111490"><richcontent TYPE="NOTE">
 <html>
@@ -1870,8 +1464,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="nameKey" ID="ID_248611537"><richcontent TYPE="NOTE">
 <html>
@@ -1886,8 +1479,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="preferencesXml" ID="ID_1808451299"><richcontent TYPE="NOTE">
 <html>
@@ -1929,8 +1521,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="theme" ID="ID_1575551296"><richcontent TYPE="NOTE">
 <html>
@@ -1945,8 +1536,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="translatedName" ID="ID_1681295047"><richcontent TYPE="NOTE">
 <html>
@@ -1961,8 +1551,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="translations" ID="ID_1395684252"><richcontent TYPE="NOTE">
 <html>
@@ -2019,8 +1608,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="updateUrl" ID="ID_439639648"><richcontent TYPE="NOTE">
 <html>
@@ -2035,8 +1623,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="version" ID="ID_1999833570"><richcontent TYPE="NOTE">
 <html>
@@ -2051,8 +1638,7 @@ justa a **dummy** markdown file
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -2074,7 +1660,7 @@ justa a **dummy** markdown file
       
     </p>
     <p>
-      JComponent component = (JComponent) MA. getComponent()
+      JComponent co = (JComponent) MA. getComponent()
     </p>
   </body>
 </html></richcontent>

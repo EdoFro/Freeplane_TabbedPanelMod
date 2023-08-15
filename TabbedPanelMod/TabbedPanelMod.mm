@@ -206,13 +206,13 @@
 </node>
 <node TEXT="v0.4" ID="ID_1757710277">
 <node TEXT="added boolean property &quot;isModded&quot; to TabPanel" ID="ID_1090337022">
-<node TEXT="is true if addon have been applied" ID="ID_1274695250"/>
+<node TEXT="it is true if addon have been applied" ID="ID_1274695250"/>
 </node>
 <node TEXT="created TPM static class to use it by others addons or scripts" ID="ID_1324729161">
 <node TEXT="method modifyTab(int tabIndex, String iconName) changes the title to a button with the desired Freeplane icon" ID="ID_725318856"/>
 </node>
-<node TEXT="&quot;collapsed width&quot; now is taken from the tabPanel" ID="ID_994237866"/>
-<node TEXT="Widths are now stored as a properties file" ID="ID_1370962617"/>
+<node TEXT="&quot;collapsed width&quot; is now detemined dinamically" ID="ID_994237866"/>
+<node TEXT="ToolPanel widths are now stored as a properties file" ID="ID_494089958"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1289127140"><richcontent TYPE="NOTE">

@@ -3,11 +3,11 @@
 ## v0.4
 
 * added boolean property "isModded" to TabPanel
-  * is true if addon have been applied
+  * it is true if addon have been applied
 * created TPM static class to use it by others addons or scripts
   * method modifyTab(int tabIndex, String iconName) changes the title to a button with the desired Freeplane icon
-* "collapsed width" now is taken from the tabPanel
-* Widths are now stored as a properties file
+* "collapsed width" is now detemined dinamically
+* ToolPanel widths are now stored as a properties file
 
 ## v0.3
 

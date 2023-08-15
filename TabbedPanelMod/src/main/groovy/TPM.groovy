@@ -27,7 +27,6 @@ class TPM{
 
     static final SwingBuilder swingBuilder =  new SwingBuilder()
 
-    def static modifyTab(int i, String iconForTab = null){
     static Properties tpmProps = new Properties()
 
     static File tpmPropsFile = new File (c.getUserDirectory(),'resources/TabbedPanelMod/TPM.properties')
@@ -36,6 +35,7 @@ class TPM{
 
     static boolean savingTpmProps = false
 
+    def static modifyTab(int i,  iconForTab = null){
         if(isModActive()) {
             def toolTip = FPTabPane.getTitleAt(i) ?: FPTabPane.getToolTipTextAt(i)
             FPTabPane.setToolTipTextAt(i, toolTip)
@@ -48,7 +48,7 @@ class TPM{
         FPTabPane.hasProperty('isModded')? FPTabPane.isModded : false
     }
 
-    static JButton tabButton(Integer num, String toolTip, String iconForTab = null){
+    def static tabButton(int indexP, String toolTip,  iconForTab = null){
         def TPMaction = {e ->
             collapsedWidth = e.source.parent.width
             def botones = e.source.parent.components
@@ -73,16 +73,16 @@ class TPM{
             }
         }
         def icono = iconForTab?menuUtils.getMenuItemIcon('IconAction.' + iconForTab):null
-        JButton btn = swingBuilder.button(
         icono ?= getIcon(indexP, toolTip)
+        def btn = swingBuilder.button(
                 horizontalAlignment : SwingConstants.LEFT,
                 icon                : icono,
                 toolTipText         : toolTip,
                 margin              : new Insets(0,0,0,0),
                 borderPainted       : false,
                 opaque              : false,
-                actionPerformed     : TPMaction,
-        ) as JButton
+                actionPerformed     : TPMaction
+        )
         return btn
     }
 

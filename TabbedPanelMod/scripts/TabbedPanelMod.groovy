@@ -17,10 +17,15 @@ switch(TP.getTabPlacement()){
         }
         if (!TP.hasProperty('tabWidths')){
         //if (!TP.hasProperty('tabWidths') || !TP.tabWidths ){ //this here is for testing purposes. can be commented/deleted, (and uncomment the previous line)
-            def tw = []
-            numTabs.times{ tw << null}
+            def tw = TPM.getInitialTabWidths()
+            /*def tw = [:]
+            numTabs.times{ i ->
+                tw[TP.getTitleAt(i)] = null
+            }*/
+            //println tw
             TP.metaClass.tabWidths = tw
-            TP.tabWidths[TP.selectedIndex] = TP.width
+            TP.tabWidths[TP.getTitleAt(TP.selectedIndex)] = TP.width
+            //println TP.tabWidths
         }
         if (TP.hasProperty('originalWidth')){
             TP.originalWidth = TP.width
@@ -36,8 +41,8 @@ switch(TP.getTabPlacement()){
             TPM.modifyTab(i)
         }
         TP.setTabPlacement(JTabbedPane.RIGHT)
-        if(TP.tabWidths[TP.selectedIndex]){
-            TPM.resizeTP(TP.tabWidths[TP.selectedIndex])
+        if(TP.tabWidths[TP.getToolTipTextAt(TP.selectedIndex)]){
+            TPM.resizeTP(TP.tabWidths[TP.getToolTipTextAt(TP.selectedIndex)])
         }
         TP.componentListeners.findAll{ it.class.toString() == 'class CustomTabPanelComponentListener' }.each{TP.removeComponentListener(it)}
         TP.addComponentListener(new CustomTabPanelComponentListener())
@@ -53,6 +58,7 @@ switch(TP.getTabPlacement()){
         TP.isModded = false
         TPM.resizeTP(TP.originalWidth)
         //TP.tabWidths.clear() //this here is for testing purposes. can be commented/deleted
+        //println TP.tabWidths
         break
     //default:
 
@@ -65,10 +71,14 @@ return 'done'
 class CustomTabPanelComponentListener implements ComponentListener {
     void componentResized(ComponentEvent e) { //https://docs.oracle.com/javase/8/docs/api/java/awt/event/ComponentEvent.html
         def comp = e.component
-        if (comp.getTabPlacement()==JTabbedPane.RIGHT && !comp.collapsed){
-            def selTab = comp.selectedIndex
+        //println "componentResized: ignorar: ${TPM.ignoreResizing}"
+        if (!TPM.ignoreResizing && comp.getTabPlacement()==JTabbedPane.RIGHT && !comp.collapsed && comp.width>=TPM.collapsedWidth+10){
+            def selTab = comp.getToolTipTextAt(comp.selectedIndex)
             comp.tabWidths[selTab] = comp.width
+            TPM.saveTabWidths()
+            //println comp.tabWidths
         }
+        TPM.ignoreResizing = false
     }
 
     void componentMoved(ComponentEvent e) {

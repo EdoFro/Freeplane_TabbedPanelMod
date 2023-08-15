@@ -364,7 +364,7 @@ before the actual namefilter setting)
 <node TEXT="files" ID="ID_1969083813">
 <node TEXT=".gitattributes" ID="ID_43647129" LINK=".gitattributes"/>
 <node TEXT="TabbedPanelMod" ID="ID_1425281966" LINK="TabbedPanelMod/">
-<node TEXT="lib" STYLE_REF="Organizador" FOLDED="true" ID="ID_1958296406">
+<node TEXT="lib" STYLE_REF="Organizador" ID="ID_1958296406">
 <node TEXT="src" ID="ID_1844927763" LINK="TabbedPanelMod/src/">
 <node TEXT="main" ID="ID_1344912241" LINK="TabbedPanelMod/src/main/">
 <node TEXT="groovy" ID="ID_648687903" LINK="TabbedPanelMod/src/main/groovy/"><richcontent TYPE="DETAILS">
@@ -378,8 +378,7 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="agregar classes .groovy para crear librería" STYLE_REF="pendingTask" ID="ID_989699600"/>
-<node TEXT="TPM.groovy" STYLE_REF="freshNew" ID="ID_169629068" LINK="TabbedPanelMod/src/main/groovy/TPM.groovy"/>
+<node TEXT="TPM.groovy" ID="ID_169629068" LINK="TabbedPanelMod/src/main/groovy/TPM.groovy"/>
 </node>
 <node TEXT="java" ID="ID_580696252" LINK="TabbedPanelMod/src/main/java/"><richcontent TYPE="DETAILS">
 <html>
@@ -392,7 +391,6 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="agregar classes .java para crear librería" STYLE_REF="pendingTask" ID="ID_1331649596"/>
 </node>
 <node TEXT="resources" ID="ID_592812189" LINK="TabbedPanelMod/src/main/resources/"><richcontent TYPE="DETAILS">
 <html>
@@ -405,7 +403,6 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="agregar resources para crear librería" STYLE_REF="pendingTask" ID="ID_16517964"/>
 </node>
 </node>
 </node>
@@ -437,19 +434,7 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="adaptar archivo build.gradle" STYLE_REF="pendingTask" ID="ID_1793329482"><richcontent TYPE="NOTE">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      para que al &quot;build&quot; elimine las librerías que crea y no toque las que son externas.
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node TEXT="TabbedPanelMod.jar" STYLE_REF="freshNew" ID="ID_1028275102" LINK="TabbedPanelMod/lib/TabbedPanelMod.jar"/>
+<node TEXT="TabbedPanelMod.jar" ID="ID_1028275102" LINK="TabbedPanelMod/lib/TabbedPanelMod.jar"/>
 </node>
 </node>
 <node TEXT="scripts" ID="ID_1954520087" LINK="TabbedPanelMod/scripts/"><richcontent TYPE="DETAILS">
@@ -474,6 +459,9 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
+<node TEXT="Asociar ancho de panel a nombre de panel, ( no a número de panel)" STYLE_REF="nextTask" ID="ID_1950502674">
+<node TEXT="usar map" ID="ID_1081996225"/>
+</node>
 </node>
 <node TEXT="Tabbed panel mod" ID="ID_1422987138" LINK="menuitem:_addons.tabbedPanelMod.TabbedPanelMod_on_single_node"/>
 </node>
@@ -833,7 +821,7 @@ justa a **dummy** markdown file
 <node TEXT="TabbedPanelMod project.mm" ID="ID_1474290422" LINK="TabbedPanelMod%20project.mm"/>
 </node>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1996504727">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleText&amp;#x7c;2|number:decimal:#0.####"/>
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
 <richcontent TYPE="NOTE">
 <html>
   <head>
@@ -841,7 +829,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-08-11&#xa0;&#xa0;00:52:49
+      Inated:&#xa0;&#xa0;&#xa0;2023-08-12&#xa0;&#xa0;18:22:55
     </p>
     <p>
       
@@ -880,7 +868,7 @@ justa a **dummy** markdown file
       
     </p>
     <p>
-      0.1 seconds
+      0.6 seconds
     </p>
     <p>
       
@@ -898,8 +886,7 @@ justa a **dummy** markdown file
       No failed operation in drive
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="TabbedPanelMod" ID="ID_486066267" LINK="TabbedPanelMod/">
 <node TEXT="src" ID="ID_1682335685" LINK="TabbedPanelMod/src/">
 <node TEXT="main" ID="ID_880317617" LINK="TabbedPanelMod/src/main/"/>
@@ -2799,6 +2786,140 @@ justa a **dummy** markdown file
 </node>
 </node>
 </node>
+<node TEXT="guardar valores en archivo properties" ID="ID_624351933"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Properties tpmProps = new Properties()
+    </p>
+    <p>
+      println tpmProps
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def m = [a:11,b:22,c:33]
+    </p>
+    <p>
+      m.d = 44
+    </p>
+    <p>
+      m &lt;&lt; [e:55]
+    </p>
+    <p>
+      m.f = 66
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      File tpmPropsFile = new File (/C:\Users\efroh\GitHub\Freeplane_TabbedPanelMod\ignoredByGitHub\TPM.properties/)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println tpmPropsFile.absolutePath
+    </p>
+    <p>
+      tpmProps.load(new FileInputStream(tpmPropsFile))
+    </p>
+    <p>
+      println tpmProps
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println tpmProps.f
+    </p>
+    <p>
+      println tpmProps['e']
+    </p>
+    <p>
+      def x = 'd'
+    </p>
+    <p>
+      println tpmProps[x]
+    </p>
+    <p>
+      println tpmProps.&quot;$x&quot;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      tpmProps.each{k,v -&gt;
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;println k + &quot;&#xa0;&#xa0;= &quot; + v
+    </p>
+    <p>
+      &#xa0;&#xa0;&#xa0;&#xa0;tpmProps.setProperty(k,(v.toInteger()+4).toString())
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      println tpmProps
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      tpmProps.store(new FileWriter(tpmPropsFile),'un comentario')
+    </p>
+  </body>
+</html>
+</richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="guardar valores en archivo config" ID="ID_127606800"/>
 </node>
 </node>
 </node>

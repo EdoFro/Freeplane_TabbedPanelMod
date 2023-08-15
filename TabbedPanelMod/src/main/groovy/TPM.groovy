@@ -21,7 +21,7 @@ class TPM{
                   'IconAction.emoji-1F43A', 'IconAction.emoji-1F41E', 'IconAction.emoji-1F98A', 'IconAction.emoji-1F577',
                   'IconAction.emoji-1F99D', 'IconAction.emoji-1F981', 'IconAction.emoji-1F993']
 
-    static final int collapsedWidth = 40
+    static int collapsedWidth=100
 
     static final SwingBuilder swingBuilder =  new SwingBuilder()
 
@@ -41,8 +41,10 @@ class TPM{
     static JButton tabButton(Integer num, String toolTip, String iconForTab = null){
         def TPMaction = {e ->
             if ( FPTabPane.selectedIndex==num && !FPTabPane.collapsed ){
-                resizeTP(collapsedWidth)
+            collapsedWidth = e.source.parent.width
+//                resizeTP(collapsedWidth)
                 FPTabPane.collapsed = true
+                resizeTP(collapsedWidth)
             }else{
                 FPTabPane.setSelectedIndex(num)
                 if(FPTabPane.tabWidths[num]){

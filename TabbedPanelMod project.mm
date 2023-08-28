@@ -459,11 +459,32 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="Asociar ancho de panel a nombre de panel, ( no a número de panel)" STYLE_REF="nextTask" ID="ID_1950502674">
-<node TEXT="usar map" ID="ID_1081996225"/>
+<node TEXT="Tabbed panel mod" POSITION="bottom_or_right" ID="ID_1422987138" LINK="menuitem:_addons.tabbedPanelMod.TabbedPanelMod_on_single_node"/>
+</node>
+<node TEXT="CollapseTabbedPanel.groovy" ID="ID_1021327096">
+<node TEXT="crear CollapseTabbedPanel" STYLE_REF="nextTask" ID="ID_1035097277">
+<node TEXT="lógica" ID="ID_241049603">
+<node TEXT="revisa si tabbedMod está encendido" ID="ID_299848713">
+<node TEXT="no" ID="ID_1245549133">
+<node TEXT="aplica el comando estándar para mostrar/ocultar toolpanel" ID="ID_311191406"/>
+</node>
+<node TEXT="sí" ID="ID_101236704">
+<node TEXT="si está colapsado --&gt; ampliar" POSITION="bottom_or_right" ID="ID_1500783653">
+<node TEXT="ver que tab está seleccionada" ID="ID_1632531952"/>
+<node TEXT="ampliar a ancho de ese tab" ID="ID_818351147"/>
+<node TEXT="marcar como no colapsado" ID="ID_857849094"/>
+</node>
+<node TEXT="si está amplio --&gt; colapsar" POSITION="bottom_or_right" ID="ID_1783303606">
+<node TEXT="cambiar ancho a colapsado" ID="ID_1440260655"/>
+<node TEXT="marcar como colapsado" ID="ID_412533485"/>
+</node>
+<node TEXT="asegurarse de que toolpanel esté visible" POSITION="bottom_or_right" ID="ID_1798625258"/>
 </node>
 </node>
-<node TEXT="Tabbed panel mod" ID="ID_1422987138" LINK="menuitem:_addons.tabbedPanelMod.TabbedPanelMod_on_single_node"/>
+</node>
+<node TEXT="agregar hotkey" ID="ID_607336379"/>
+</node>
+</node>
 </node>
 <node TEXT="zips" ID="ID_26954450" LINK="TabbedPanelMod/zips/">
 <node TEXT="icons" ID="ID_1602437280" LINK="TabbedPanelMod/zips/icons/" VGAP_QUANTITY="2 px" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="DETAILS">
@@ -492,6 +513,9 @@ before the actual namefilter setting)
 <node TEXT="09.svg" ID="ID_393817510" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/09.svg"/>
 <node TEXT="test.svg" ID="ID_1889146616" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/test.svg"/>
 <node TEXT="TabbedPanelMod.svg" ID="ID_1895888183" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/TabbedPanelMod.svg"/>
+<node TEXT="revisar que hace código si no encuentra ícono con nombre ni número" STYLE_REF="pendingTask" ID="ID_1695843917">
+<node TEXT="--&gt; ícono MoM" ID="ID_605909864"/>
+</node>
 </node>
 <node TEXT="colores iconos Freeplane" ID="ID_327717405">
 <node TEXT="3C83C5" ID="ID_1978542219"/>
@@ -636,6 +660,7 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
+<node TEXT="TPM.properties" ID="ID_1956419510" LINK="ignoredByGitHub/TPM.properties"/>
 </node>
 <node TEXT="delete" ID="ID_1612888383" LINK="delete/"><richcontent TYPE="DETAILS">
 <html>
@@ -821,7 +846,7 @@ justa a **dummy** markdown file
 <node TEXT="TabbedPanelMod project.mm" ID="ID_1474290422" LINK="TabbedPanelMod%20project.mm"/>
 </node>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1996504727">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
+<attribute NAME="log_MDI" VALUE="org.freeplane.plugin.script.proxy.ConvertibleNumber|2" OBJECT="org.freeplane.features.format.FormattedObject|java.lang.String&amp;#x7c;org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;2|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE">
 <html>
   <head>
@@ -829,7 +854,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-08-12&#xa0;&#xa0;18:22:55
+      Inated:&#xa0;&#xa0;&#xa0;2023-08-15&#xa0;&#xa0;19:30:39
     </p>
     <p>
       
@@ -844,7 +869,7 @@ justa a **dummy** markdown file
       &#xa0;0 link(s) corrected in nodes
     </p>
     <p>
-      &#xa0;0 new file(s) imported as node(s)&#xa0;
+      &#xa0;1 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
       &#xa0;0 node(s) moved/renamed in drive
@@ -868,7 +893,7 @@ justa a **dummy** markdown file
       
     </p>
     <p>
-      0.6 seconds
+      0.5 seconds
     </p>
     <p>
       
@@ -887,11 +912,6 @@ justa a **dummy** markdown file
     </p>
   </body>
 </html></richcontent>
-<node TEXT="TabbedPanelMod" ID="ID_486066267" LINK="TabbedPanelMod/">
-<node TEXT="src" ID="ID_1682335685" LINK="TabbedPanelMod/src/">
-<node TEXT="main" ID="ID_880317617" LINK="TabbedPanelMod/src/main/"/>
-</node>
-</node>
 </node>
 <node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443">
 <node TEXT="colores Freeplane" ID="ID_574877018">
@@ -2904,8 +2924,7 @@ justa a **dummy** markdown file
       tpmProps.store(new FileWriter(tpmPropsFile),'un comentario')
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent TYPE="DETAILS">
 <html>
   <head>
@@ -2916,8 +2935,7 @@ justa a **dummy** markdown file
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="guardar valores en archivo config" ID="ID_127606800"/>
 </node>

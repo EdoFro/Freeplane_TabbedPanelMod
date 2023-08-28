@@ -41,6 +41,9 @@ class TPM{
             FPTabPane.setToolTipTextAt(i, toolTip)
             FPTabPane.setTitleAt(i, null)
             FPTabPane.setTabComponentAt(i, tabButton(i, toolTip, iconForTab))
+            def w = FPTabPane.tabWidths[toolTip]
+            if(w)
+                resizeTP(w)
         }
     }
 

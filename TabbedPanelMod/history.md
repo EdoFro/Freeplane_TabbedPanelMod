@@ -2,6 +2,7 @@
 
 ## v0.5
 
+* Now when adding a tab that was used a time before, it automatically changes its width to the last one saved
 * bigger Tab buttons and narrower tabs container
 * Now it remembers the icons when going to TabsOnTop and back
 

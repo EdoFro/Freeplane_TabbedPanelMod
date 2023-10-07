@@ -62,33 +62,11 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 </details>
 ### Works with different Look&Feels
 
-<details><summary><h4>Flat LaF</h4></summary>
+- Flat LaF
+   - |L&F|image|<br>|----|----|<br>|Flat Light|![Flat Light](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png)|<br>|Flat IntelliJ|![Flat IntelliJ](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png)|<br>|Flat Solarized|![Flat Solarized](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png)|<br>|Flat Dark|![Flat Dark](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png)|<br>|Flat Darkula|![Flat Darkula](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png)|<br>|Flat Dark Material|![Flat Dark Material](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png)|
+- Classic LaF
+   - |L&F|image|<br>|----|----|<br>|Windows|![Windows](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows.png)|<br>|Windows Classic|![Windows Classic](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows%20Classic.png)|<br>|Nimbus|![Nimbus](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Nimbus.png)|<br>|Metal|![Metal](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Metal.png)|<br>|CDE Motif|![CDE Motif](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png)|
 
-- Flat Light
-   - ![Flat Light](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png)
-- Flat IntelliJ
-   - ![Flat IntelliJ](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png)
-- Flat Solarized
-   - ![Flat Solarized](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png)
-- Flat Dark
-   - ![Flat Dark](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png)
-- Flat Darkula
-   - ![Flat Darkula](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png)
-- Flat Dark Material
-   - ![Flat Dark Material](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png)
-
-</details>
-<details><summary><h4>Classic LaF</h4></summary>
-
-|L&F|image|
-|----|----|
-|Windows|![Windows](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows.png)|
-|Windows Classic|![Windows Classic](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows%20Classic.png)|
-|Nimbus|![Nimbus](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Nimbus.png)|
-|Metal|![Metal](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Metal.png)|
-|CDE Motif|![CDE Motif](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png)|
-
-</details>
 </details>
 
 ----

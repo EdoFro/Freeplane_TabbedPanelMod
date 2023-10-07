@@ -220,15 +220,15 @@ blockquote {
 </node>
 </node>
 <node TEXT="Works with different Look&amp;Feels" ID="ID_908315966">
-<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_552349071"><richcontent TYPE="NOTE">
-<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
-<node TEXT="Flat LaF" ID="ID_497945471">
+<node TEXT="- Flat LaF" ID="ID_497945471">
 <icon BUILTIN="emoji-1F53B"/>
 <node TEXT="table" STYLE_REF="MarkdownHelperNode" ID="ID_1827577164"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.table(node)</text></richcontent>
 <node TEXT="r" ID="ID_379110535">
 <node TEXT="L&amp;F" ID="ID_1706230587"/>
-<node TEXT="image" ID="ID_237210713"/>
+<node TEXT="example" ID="ID_237210713"/>
+<node TEXT="L&amp;F" ID="ID_891877255"/>
+<node TEXT="example" ID="ID_1030933590"/>
 </node>
 <node TEXT="r" ID="ID_1902188681">
 <node TEXT="Flat Light" ID="ID_1680181839"/>
@@ -236,10 +236,8 @@ blockquote {
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Light" POSITION="bottom_or_right" ID="ID_1784552738" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png"/>
 </node>
-</node>
-<node TEXT="r" ID="ID_1290220473">
-<node TEXT="Flat IntelliJ" ID="ID_608380770"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1822859718"><richcontent TYPE="NOTE">
+<node TEXT="Flat IntelliJ" POSITION="bottom_or_right" ID="ID_608380770"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1822859718"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat IntelliJ" POSITION="bottom_or_right" ID="ID_1334695456" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png"/>
 </node>
@@ -250,10 +248,8 @@ blockquote {
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Solarized" POSITION="bottom_or_right" ID="ID_108944190" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png"/>
 </node>
-</node>
-<node TEXT="r" ID="ID_696852694">
-<node TEXT="Flat Dark" ID="ID_68850982"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1960318946"><richcontent TYPE="NOTE">
+<node TEXT="Flat Dark" POSITION="bottom_or_right" ID="ID_68850982"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1960318946"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Dark" POSITION="bottom_or_right" ID="ID_384444209" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png"/>
 </node>
@@ -264,23 +260,23 @@ blockquote {
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Darkula" POSITION="bottom_or_right" ID="ID_1726448340" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png"/>
 </node>
-</node>
-<node TEXT="r" ID="ID_1311772527">
-<node TEXT="Flat Dark Material" ID="ID_995409475"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1366280141"><richcontent TYPE="NOTE">
+<node TEXT="Atom One&#xa;Dark Contrast" POSITION="bottom_or_right" ID="ID_995409475"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1366280141"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Dark Material" ID="ID_571969252" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="Classic LaF" ID="ID_700031968">
+<node TEXT="- Classic LaF" ID="ID_700031968">
 <icon BUILTIN="emoji-1F53B"/>
 <node TEXT="table" STYLE_REF="MarkdownHelperNode" ID="ID_1288353509"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.table(node)</text></richcontent>
 <node TEXT="r" ID="ID_1211010716">
 <node TEXT="L&amp;F" ID="ID_759417209"/>
-<node TEXT="image" ID="ID_831744652"/>
+<node TEXT="example" ID="ID_1337952764"/>
+<node TEXT="L&amp;F" ID="ID_722293861"/>
+<node TEXT="example" ID="ID_1056186826"/>
 </node>
 <node TEXT="r" ID="ID_1368725648">
 <node TEXT="Windows" POSITION="bottom_or_right" ID="ID_1651744618"/>
@@ -288,9 +284,7 @@ blockquote {
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Windows" POSITION="bottom_or_right" ID="ID_1185183087" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows.png"/>
 </node>
-</node>
-<node TEXT="r" ID="ID_1798357058">
-<node TEXT="Windows Classic" ID="ID_685827720"/>
+<node TEXT="Windows&#xa;Classic" ID="ID_685827720"/>
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_871894983"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Windows Classic" POSITION="bottom_or_right" ID="ID_604790389" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows%20Classic.png"/>
@@ -302,8 +296,6 @@ blockquote {
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Nimbus" POSITION="bottom_or_right" ID="ID_141763095" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Nimbus.png"/>
 </node>
-</node>
-<node TEXT="r" ID="ID_1924835823">
 <node TEXT="Metal" ID="ID_175684825"/>
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1692459119"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
@@ -311,11 +303,10 @@ blockquote {
 </node>
 </node>
 <node TEXT="r" ID="ID_789281901">
-<node TEXT="CDE Motif" ID="ID_871575667"/>
+<node TEXT="CDE&#xa;Motif" ID="ID_871575667"/>
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_662779249"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="CDE Motif" POSITION="bottom_or_right" ID="ID_1102388043" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png"/>
-</node>
 </node>
 </node>
 </node>

@@ -30,7 +30,6 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 
 </details>
 
-
 ----
 
 <details><summary><h2>Images</h2></summary>
@@ -68,7 +67,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 
 <details><summary><h4>- Flat LaF</h4></summary>
 
-|L&F|image|L&F|image|
+|L&F|example|L&F|example|
 |----|----|----|----|
 |Flat Light|![Flat Light](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png)|Flat IntelliJ|![Flat IntelliJ](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png)|
 |Flat Solarized|![Flat Solarized](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png)|Flat Dark|![Flat Dark](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png)|
@@ -78,17 +77,16 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 
 <details><summary><h4>- Classic LaF</h4></summary>
 
-|L&F|image|
-|----|----|
-|Windows|![Windows](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows.png)|
-|Windows Classic|![Windows Classic](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows%20Classic.png)|
-|Nimbus|![Nimbus](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Nimbus.png)|
-|Metal|![Metal](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Metal.png)|
-|CDE Motif|![CDE Motif](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png)|
+|L&F|example|L&F|example|
+|----|----|----|----|
+|Windows|![Windows](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows.png)|Windows<br>Classic|![Windows Classic](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows%20Classic.png)|
+|Nimbus|![Nimbus](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Nimbus.png)|Metal|![Metal](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Metal.png)|
+|CDE<br>Motif|![CDE Motif](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png)|
 
 </details>
 
 </details>
+
 
 ----
 

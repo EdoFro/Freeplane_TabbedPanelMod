@@ -43,6 +43,16 @@ class TPM{
     def static modifyTab(int i,  iconForTab = null){
         if(isModActive()) {
             def tabName = FPTabPane.getTitleAt(i) ?: FPTabPane.getToolTipTextAt(i)
+            println('modifyTab: tabName ' + tabName)
+            println('modifyTab: iconForTab ' + iconForTab)
+            println('modifyTab: FPTabPane.tabIconNames ' + FPTabPane.tabIconNames)
+            if(iconForTab){
+                FPTabPane.tabIconNames[tabName] = iconForTab
+            } else {
+                iconForTab = FPTabPane.tabIconNames[tabName]
+            }
+            println('modifyTab: iconForTab ' + iconForTab)
+            println('modifyTab: FPTabPane.tabIconNames ' + FPTabPane.tabIconNames)
             FPTabPane.setToolTipTextAt(i, tabName)
             FPTabPane.setTitleAt(i, null)
             FPTabPane.setTabComponentAt(i, tabButton(i, tabName, iconForTab))

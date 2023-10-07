@@ -20,6 +20,8 @@ switch(TP.getTabPlacement()){
             TP.metaClass.tabWidths = tw
             TP.tabWidths[TP.getTitleAt(TP.selectedIndex)] = TP.width
         }
+        if (!TP.hasProperty('tabIconNames')){
+            TP.metaClass.tabIconNames = [:]
         }
 
         TP.tabCount.times{i -> TPM.modifyTab(i) }

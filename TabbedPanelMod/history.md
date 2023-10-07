@@ -3,6 +3,7 @@
 ## v0.5
 
 * bigger Tab buttons and narrower tabs container
+* Now it remembers the icons when going to TabsOnTop and back
 
 ## v0.4
 

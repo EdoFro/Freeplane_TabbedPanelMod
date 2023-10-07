@@ -241,6 +241,13 @@ blockquote {
 <stylenode TEXT="notMovedRenamed" BACKGROUND_COLOR="#f28bb3" BORDER_WIDTH="3 px">
 <icon BUILTIN="emoji-26D4"/>
 </stylenode>
+<stylenode TEXT="moveToTrash" BACKGROUND_COLOR="#e0e000">
+<icon BUILTIN="emoji-1F6AE"/>
+<font STRIKETHROUGH="false" ITALIC="true"/>
+</stylenode>
+<stylenode TEXT="trashFolder" BACKGROUND_COLOR="#e0e000" STYLE="rectangle" BORDER_WIDTH="3 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#c61b26">
+<icon BUILTIN="emoji-1F5D1"/>
+</stylenode>
 </stylenode>
 <stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" ID="ID_1209359852" COLOR="#ffffff" BACKGROUND_COLOR="#484747" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="15 pt" TEXT_ALIGN="CENTER" MAX_WIDTH="5 cm" MIN_WIDTH="3 cm">
@@ -363,7 +370,7 @@ before the actual namefilter setting)
 </text></richcontent>
 <node TEXT="files" ID="ID_1969083813">
 <node TEXT=".gitattributes" ID="ID_43647129" LINK=".gitattributes"/>
-<node TEXT="TabbedPanelMod" ID="ID_1425281966" LINK="TabbedPanelMod/">
+<node TEXT="TabbedPanelMod" FOLDED="true" ID="ID_1425281966" LINK="TabbedPanelMod/">
 <node TEXT="lib" STYLE_REF="Organizador" ID="ID_1958296406">
 <node TEXT="src" ID="ID_1844927763" LINK="TabbedPanelMod/src/">
 <node TEXT="main" ID="ID_1344912241" LINK="TabbedPanelMod/src/main/">
@@ -802,10 +809,21 @@ before the actual namefilter setting)
 <attribute NAME="fileSize" VALUE="3.571" OBJECT="org.freeplane.features.format.FormattedNumber|3571|#,##0"/>
 </node>
 </node>
-<node TEXT="resources" FOLDED="true" ID="ID_687946481" LINK="resources/">
+<node TEXT="resources" ID="ID_687946481" LINK="resources/">
 <node TEXT="Standard.png" ID="ID_781611361" LINK="resources/Standard.png"/>
 <node TEXT="TabsToTheRight.png" ID="ID_413585294" LINK="resources/TabsToTheRight.png"/>
 <node TEXT="minimizedClickedAgain.png" ID="ID_1509093809" LINK="resources/minimizedClickedAgain.png"/>
+<node TEXT="Flat Dark Material.png" ID="ID_338998624" LINK="resources/Flat%20Dark%20Material.png"/>
+<node TEXT="Flat Dark.png" ID="ID_1056962002" LINK="resources/Flat%20Dark.png"/>
+<node TEXT="Flat Solarized.png" ID="ID_573249671" LINK="resources/Flat%20Solarized.png"/>
+<node TEXT="Flat IntelliJ.png" ID="ID_472440234" LINK="resources/Flat%20IntelliJ.png"/>
+<node TEXT="Flat Light.png" ID="ID_394942217" LINK="resources/Flat%20Light.png"/>
+<node TEXT="Windows Classic.png" ID="ID_1985810286" LINK="resources/Windows%20Classic.png"/>
+<node TEXT="Windows.png" ID="ID_780214476" LINK="resources/Windows.png"/>
+<node TEXT="CDE Motif.png" ID="ID_1999708449" LINK="resources/CDE%20Motif.png"/>
+<node TEXT="Nimbus.png" ID="ID_1624319399" LINK="resources/Nimbus.png"/>
+<node TEXT="Metal.png" ID="ID_1367535695" LINK="resources/Metal.png"/>
+<node TEXT="Flat Darkula.png" ID="ID_417904663" LINK="resources/Flat%20Darkula.png"/>
 </node>
 <node TEXT="ignoredByGitHub" ID="ID_480970289" LINK="ignoredByGitHub/"><richcontent TYPE="DETAILS">
 <html>
@@ -819,18 +837,6 @@ before the actual namefilter setting)
   </body>
 </html></richcontent>
 <node TEXT="TPM.properties" ID="ID_1956419510" LINK="ignoredByGitHub/TPM.properties"/>
-</node>
-<node TEXT="delete" ID="ID_1612888383" LINK="delete/"><richcontent TYPE="DETAILS">
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      carpeta para acumular archivos a borrar
-    </p>
-  </body>
-</html></richcontent>
 </node>
 <node TEXT=".gitignore" ID="ID_37030934" LINK=".gitignore"><richcontent TYPE="NOTE">
 <html>
@@ -1012,7 +1018,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-10-07&#xa0;&#xa0;14:46:18
+      Inated:&#xa0;&#xa0;&#xa0;2023-10-07&#xa0;&#xa0;17:41:35
     </p>
     <p>
       
@@ -1030,7 +1036,7 @@ justa a **dummy** markdown file
       &#xa0;0 new file(s) imported as node(s)&#xa0;
     </p>
     <p>
-      &#xa0;0 node(s) moved/renamed in drive
+      &#xa0;12 node(s) moved/renamed in drive
     </p>
     <p>
       &#xa0;0 node(s) couldn't be moved/renamed in drive (marked as 'notMovedRenamed')
@@ -1051,7 +1057,7 @@ justa a **dummy** markdown file
       
     </p>
     <p>
-      0.6 seconds
+      0.2 seconds
     </p>
     <p>
       
@@ -1071,6 +1077,22 @@ justa a **dummy** markdown file
   </body>
 </html>
 </richcontent>
+</node>
+<node TEXT="delete" STYLE_REF="trashFolder" ID="ID_1612888383" LINK="delete/"><richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      carpeta para acumular archivos a borrar
+    </p>
+  </body>
+</html></richcontent>
+<node TEXT="Image 011.png" STYLE_REF="moveToTrash" ID="ID_1426625205" LINK="delete/Image%20011.png">
+<attribute NAME="MDI_oldUri" VALUE="resources/Image%20011.png" OBJECT="java.net.URI|resources/Image%20011.png"/>
+<attribute NAME="MDI_movedFrom" VALUE="ID_687946481"/>
+</node>
 </node>
 <node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443">
 <node TEXT="colores Freeplane" ID="ID_574877018">

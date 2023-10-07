@@ -30,6 +30,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 
 </details>
 
+
 ----
 
 <details><summary><h2>Images</h2></summary>
@@ -42,6 +43,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 - ![Standard.png](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Standard.png)
 
 </details>
+
 <details><summary><h3>After applying TabbedPanelMod</h3></summary>
 
 - Menu:
@@ -52,6 +54,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 - ![TabsToTheRight.png](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/TabsToTheRight.png)
 
 </details>
+
 <details><summary><h3>Tabbed panel minimized</h3></summary>
 
 - After clicking again on the selected tab.
@@ -60,6 +63,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 - ![minimizedClickedAgain.png](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/minimizedClickedAgain.png)
 
 </details>
+
 ### Works with different Look&Feels
 
 <details><summary><h4>- Flat LaF</h4></summary>
@@ -74,6 +78,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 |Flat Dark Material|![Flat Dark Material](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png)|
 
 </details>
+
 <details><summary><h4>- Classic LaF</h4></summary>
 
 |L&F|image|
@@ -85,6 +90,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 |CDE Motif|![CDE Motif](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png)|
 
 </details>
+
 </details>
 
 ----
@@ -105,6 +111,7 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
    - for its name you have to consider the logic explained in the previous point.
 
 </details>
+
 
 ----
 

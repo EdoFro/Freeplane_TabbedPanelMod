@@ -4,7 +4,13 @@ This add-on changes the tabbed panel (Tool panel) layout.
 
 It places its tabs to the right and changes the labels to icons.
 
+Default (windows) Look&Feel
+
 ![TabsToTheRight.png](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/TabsToTheRight.png)
+
+Flat Darkula Look&Feel
+
+![Flat_Darkula.png](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png)
 
 Menu:
 
@@ -56,6 +62,69 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 - Tabs are still visible
 - ![minimizedClickedAgain.png](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/minimizedClickedAgain.png)
 
+</details>
+### Works with different Look&Feels
+
+<details><summary><h4>Flat LaF</h4></summary>
+
+<details><summary><h5>Flat Light</h5></summary>
+
+![Flat Light](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png)
+
+</details>
+<details><summary><h5>Flat IntelliJ</h5></summary>
+
+![Flat IntelliJ](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png)
+
+</details>
+<details><summary><h5>Flat Solarized</h5></summary>
+
+![Flat Solarized](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png)
+
+</details>
+<details><summary><h5>Flat Dark</h5></summary>
+
+![Flat Dark](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png)
+
+</details>
+<details><summary><h5>Flat Darkula</h5></summary>
+
+![Flat Darkula](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png)
+
+</details>
+<details><summary><h5>Flat Dark Material</h5></summary>
+
+![Flat Dark Material](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png)
+
+</details>
+</details>
+<details><summary><h4>Classic LaF</h4></summary>
+
+<details><summary><h5>Windows</h5></summary>
+
+![Windows](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows.png)
+
+</details>
+<details><summary><h5>Windows Classic</h5></summary>
+
+![Windows Classic](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows%20Classic.png)
+
+</details>
+<details><summary><h5>Nimbus</h5></summary>
+
+![Nimbus](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Nimbus.png)
+
+</details>
+<details><summary><h5>Metal</h5></summary>
+
+![Metal](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Metal.png)
+
+</details>
+<details><summary><h5>CDE Motif</h5></summary>
+
+![CDE Motif](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png)
+
+</details>
 </details>
 </details>
 

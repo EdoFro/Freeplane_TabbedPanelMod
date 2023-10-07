@@ -85,11 +85,14 @@ class TPM{
         def btn = swingBuilder.button(
                 horizontalAlignment : SwingConstants.LEFT,
                 icon                : icono,
-                margin              : new Insets(0,0,0,0),
-                borderPainted       : false,
-                opaque              : false,
-                actionPerformed     : TPMaction
                 toolTipText         : tabName,
+                margin              : new Insets(5,5,5,5),
+              //  borderPainted       : true,
+              //  opaque              : true,
+              //  background          : Color.CYAN,
+                actionPerformed     : TPMaction,
+             //   minimumSize         : new Dimension(40,10),
+             //   preferredSize       : new Dimension(40,40),
         )
         return btn
     }

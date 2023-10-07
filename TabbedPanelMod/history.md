@@ -2,6 +2,7 @@
 
 ## v0.5
 
+* bigger Tab buttons and narrower tabs container
 
 ## v0.4
 

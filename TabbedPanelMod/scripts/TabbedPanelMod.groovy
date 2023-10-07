@@ -1,6 +1,9 @@
 import java.awt.event.ComponentEvent
 import java.awt.event.ComponentListener
+import java.awt.Insets
+
 import javax.swing.JTabbedPane
+import javax.swing.UIManager
 
 import edofro.tabbedpanelmod.TPM
 
@@ -25,6 +28,9 @@ switch(TP.getTabPlacement()){
         def initialTabWidth = TP.tabWidths[TP.getToolTipTextAt(TP.selectedIndex)]
         if(initialTabWidth)
             TPM.resizeTP(initialTabWidth)
+
+        resizeTabsContainer()
+
         TP.componentListeners.findAll{ it.class.toString() == 'class CustomTabPanelComponentListener' }.each{TP.removeComponentListener(it)}
         TP.addComponentListener(new CustomTabPanelComponentListener())
 
@@ -38,6 +44,7 @@ switch(TP.getTabPlacement()){
         TP.setTabPlacement(JTabbedPane.TOP)
         TP.collapsed = false
         TP.isModded = false
+        TP.updateUI()
         TPM.resizeTP(TP.originalWidth)
         //TP.tabWidths.clear() //this here is for testing purposes. can be commented/deleted
         //println TP.tabWidths
@@ -55,6 +62,16 @@ def setTabProperty(String name, value){
     else
         TP.metaClass[name] = value
 }
+
+def resizeTabsContainer(){
+    def previousTabInsets = UIManager.getInsets('TabbedPane.tabInsets')
+    UIManager.put('TabbedPane.tabInsets',new Insets(0,2,0,1))
+    TP.updateUI()
+    TP.revalidate()
+    TP.repaint()
+    UIManager.put('TabbedPane.tabInsets', previousTabInsets)
+}
+
 
 class CustomTabPanelComponentListener implements ComponentListener {
     void componentResized(ComponentEvent e) { //https://docs.oracle.com/javase/8/docs/api/java/awt/event/ComponentEvent.html

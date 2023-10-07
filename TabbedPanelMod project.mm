@@ -378,7 +378,12 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="TPM.groovy" ID="ID_169629068" LINK="TabbedPanelMod/src/main/groovy/TPM.groovy"/>
+<node TEXT="TPM.groovy" ID="ID_169629068" LINK="TabbedPanelMod/src/main/groovy/TPM.groovy">
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:29" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:29-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:29" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:29-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-08-23 19:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-15T19:14-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="6.120" OBJECT="org.freeplane.features.format.FormattedNumber|6120|#,##0"/>
+</node>
 </node>
 <node TEXT="java" ID="ID_580696252" LINK="TabbedPanelMod/src/main/java/"><richcontent TYPE="DETAILS">
 <html>
@@ -434,7 +439,12 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="TabbedPanelMod.jar" ID="ID_1028275102" LINK="TabbedPanelMod/lib/TabbedPanelMod.jar"/>
+<node TEXT="TabbedPanelMod.jar" ID="ID_1028275102" LINK="TabbedPanelMod/lib/TabbedPanelMod.jar">
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:29" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:29-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="09-08-23 15:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:32-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="16.266" OBJECT="org.freeplane.features.format.FormattedNumber|16266|#,##0"/>
+</node>
 </node>
 </node>
 <node TEXT="scripts" ID="ID_1954520087" LINK="TabbedPanelMod/scripts/"><richcontent TYPE="DETAILS">
@@ -459,11 +469,36 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="Asociar ancho de panel a nombre de panel, ( no a número de panel)" STYLE_REF="nextTask" ID="ID_1950502674">
-<node TEXT="usar map" ID="ID_1081996225"/>
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:25" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:25-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:32-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="3.288" OBJECT="org.freeplane.features.format.FormattedNumber|3288|#,##0"/>
+<node TEXT="Tabbed panel mod" POSITION="bottom_or_right" ID="ID_1422987138" LINK="menuitem:_addons.tabbedPanelMod.TabbedPanelMod_on_single_node"/>
+</node>
+<node TEXT="CollapseTabbedPanel.groovy" ID="ID_1021327096">
+<node TEXT="crear CollapseTabbedPanel" STYLE_REF="nextTask" ID="ID_1035097277">
+<node TEXT="lógica" ID="ID_241049603">
+<node TEXT="revisa si tabbedMod está encendido" ID="ID_299848713">
+<node TEXT="no" ID="ID_1245549133">
+<node TEXT="aplica el comando estándar para mostrar/ocultar toolpanel" ID="ID_311191406"/>
+</node>
+<node TEXT="sí" ID="ID_101236704">
+<node TEXT="si está colapsado --&gt; ampliar" POSITION="bottom_or_right" ID="ID_1500783653">
+<node TEXT="ver que tab está seleccionada" ID="ID_1632531952"/>
+<node TEXT="ampliar a ancho de ese tab" ID="ID_818351147"/>
+<node TEXT="marcar como no colapsado" ID="ID_857849094"/>
+</node>
+<node TEXT="si está amplio --&gt; colapsar" POSITION="bottom_or_right" ID="ID_1783303606">
+<node TEXT="cambiar ancho a colapsado" ID="ID_1440260655"/>
+<node TEXT="marcar como colapsado" ID="ID_412533485"/>
+</node>
+<node TEXT="asegurarse de que toolpanel esté visible" POSITION="bottom_or_right" ID="ID_1798625258"/>
 </node>
 </node>
-<node TEXT="Tabbed panel mod" ID="ID_1422987138" LINK="menuitem:_addons.tabbedPanelMod.TabbedPanelMod_on_single_node"/>
+</node>
+<node TEXT="agregar hotkey" ID="ID_607336379"/>
+</node>
+</node>
 </node>
 <node TEXT="zips" ID="ID_26954450" LINK="TabbedPanelMod/zips/">
 <node TEXT="icons" ID="ID_1602437280" LINK="TabbedPanelMod/zips/icons/" VGAP_QUANTITY="2 px" COMMON_HGAP_QUANTITY="14 pt"><richcontent TYPE="DETAILS">
@@ -479,19 +514,81 @@ before the actual namefilter setting)
 </html></richcontent>
 <node TEXT="TabbedPanelMod" ID="ID_1254328724" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/" VSHIFT_QUANTITY="-0.75 pt">
 <node TEXT="00.svg" ID="ID_1678729263" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/00.svg">
+<attribute NAME="lastModifiedTime" VALUE="11-07-23 18:35" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-11T18:35-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="871" OBJECT="org.freeplane.features.format.FormattedNumber|871|#,##0"/>
 <node TEXT="00" ID="ID_476887472" LINK="menuitem:_IconAction.TabbedPanelMod/00"/>
 </node>
-<node TEXT="01.svg" ID="ID_167708381" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/01.svg"/>
-<node TEXT="02.svg" ID="ID_113537657" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/02.svg"/>
-<node TEXT="03.svg" ID="ID_838819414" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/03.svg"/>
-<node TEXT="04.svg" ID="ID_584409115" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/04.svg"/>
-<node TEXT="05.svg" ID="ID_605612129" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/05.svg"/>
-<node TEXT="06.svg" ID="ID_813756488" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/06.svg"/>
-<node TEXT="07.svg" ID="ID_1746536230" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/07.svg"/>
-<node TEXT="08.svg" ID="ID_1993535029" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/08.svg"/>
-<node TEXT="09.svg" ID="ID_393817510" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/09.svg"/>
-<node TEXT="test.svg" ID="ID_1889146616" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/test.svg"/>
-<node TEXT="TabbedPanelMod.svg" ID="ID_1895888183" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/TabbedPanelMod.svg"/>
+<node TEXT="01.svg" ID="ID_167708381" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/01.svg">
+<attribute NAME="lastModifiedTime" VALUE="11-07-23 17:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-11T17:24-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="883" OBJECT="org.freeplane.features.format.FormattedNumber|883|#,##0"/>
+</node>
+<node TEXT="02.svg" ID="ID_113537657" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/02.svg">
+<attribute NAME="lastModifiedTime" VALUE="11-07-23 18:05" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-11T18:05-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="2.801" OBJECT="org.freeplane.features.format.FormattedNumber|2801|#,##0"/>
+</node>
+<node TEXT="03.svg" ID="ID_838819414" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/03.svg">
+<attribute NAME="lastModifiedTime" VALUE="11-07-23 18:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-11T18:32-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="943" OBJECT="org.freeplane.features.format.FormattedNumber|943|#,##0"/>
+</node>
+<node TEXT="04.svg" ID="ID_584409115" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/04.svg">
+<attribute NAME="lastModifiedTime" VALUE="09-04-22 16:30" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-09T16:30-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="565" OBJECT="org.freeplane.features.format.FormattedNumber|565|#,##0"/>
+</node>
+<node TEXT="05.svg" ID="ID_605612129" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/05.svg">
+<attribute NAME="lastModifiedTime" VALUE="09-04-22 16:30" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-09T16:30-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="695" OBJECT="org.freeplane.features.format.FormattedNumber|695|#,##0"/>
+</node>
+<node TEXT="06.svg" ID="ID_813756488" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/06.svg">
+<attribute NAME="lastModifiedTime" VALUE="09-04-22 16:30" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-09T16:30-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="680" OBJECT="org.freeplane.features.format.FormattedNumber|680|#,##0"/>
+</node>
+<node TEXT="07.svg" ID="ID_1746536230" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/07.svg">
+<attribute NAME="lastModifiedTime" VALUE="09-04-22 16:30" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-09T16:30-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="482" OBJECT="org.freeplane.features.format.FormattedNumber|482|#,##0"/>
+</node>
+<node TEXT="08.svg" ID="ID_1993535029" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/08.svg">
+<attribute NAME="lastModifiedTime" VALUE="09-04-22 16:30" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-09T16:30-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="756" OBJECT="org.freeplane.features.format.FormattedNumber|756|#,##0"/>
+</node>
+<node TEXT="09.svg" ID="ID_393817510" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/09.svg">
+<attribute NAME="lastModifiedTime" VALUE="09-04-22 16:30" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-09T16:30-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="677" OBJECT="org.freeplane.features.format.FormattedNumber|677|#,##0"/>
+</node>
+<node TEXT="test.svg" ID="ID_1889146616" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/test.svg">
+<attribute NAME="lastModifiedTime" VALUE="09-04-22 16:30" OBJECT="org.freeplane.features.format.FormattedDate|2022-04-09T16:30-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:07" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:07-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="6.484" OBJECT="org.freeplane.features.format.FormattedNumber|6484|#,##0"/>
+</node>
+<node TEXT="TabbedPanelMod.svg" ID="ID_1895888183" LINK="TabbedPanelMod/zips/icons/TabbedPanelMod/TabbedPanelMod.svg">
+<attribute NAME="lastModifiedTime" VALUE="08-08-23 19:03" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-08T19:03-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 18:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T18:12-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="995" OBJECT="org.freeplane.features.format.FormattedNumber|995|#,##0"/>
+</node>
+<node TEXT="revisar que hace código si no encuentra ícono con nombre ni número" STYLE_REF="pendingTask" ID="ID_1695843917">
+<node TEXT="--&gt; ícono MoM" ID="ID_605909864"/>
+</node>
 </node>
 <node TEXT="colores iconos Freeplane" ID="ID_327717405">
 <node TEXT="3C83C5" ID="ID_1978542219"/>
@@ -569,13 +666,27 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
+<attribute NAME="lastModifiedTime" VALUE="10-08-23 15:32" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-10T15:32-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="31-07-23 19:43" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-31T19:43-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="568" OBJECT="org.freeplane.features.format.FormattedNumber|568|#,##0"/>
 </node>
 </node>
 </node>
 </node>
 <node TEXT="images" ID="ID_1648376623" LINK="TabbedPanelMod/images/">
-<node TEXT="TabbedPanelMod.svg" ID="ID_633498564" LINK="TabbedPanelMod/images/TabbedPanelMod.svg"/>
-<node TEXT="TabbedPanelMod-screenshot-1.png" ID="ID_293559267" LINK="TabbedPanelMod/images/TabbedPanelMod-screenshot-1.png"/>
+<node TEXT="TabbedPanelMod.svg" ID="ID_633498564" LINK="TabbedPanelMod/images/TabbedPanelMod.svg">
+<attribute NAME="lastModifiedTime" VALUE="08-08-23 19:03" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-08T19:03-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 18:14" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T18:14-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="995" OBJECT="org.freeplane.features.format.FormattedNumber|995|#,##0"/>
+</node>
+<node TEXT="TabbedPanelMod-screenshot-1.png" ID="ID_293559267" LINK="TabbedPanelMod/images/TabbedPanelMod-screenshot-1.png">
+<attribute NAME="lastModifiedTime" VALUE="16-07-23 15:34" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-16T15:34-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="17-07-23 15:16" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-17T15:16-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="53.321" OBJECT="org.freeplane.features.format.FormattedNumber|53321|#,##0"/>
+</node>
 <node TEXT="TabbedPanelMod.png" ID="ID_338501651">
 <node TEXT="53x32" ID="ID_1079195239"/>
 </node>
@@ -583,7 +694,12 @@ before the actual namefilter setting)
 <node TEXT="27x16" ID="ID_282427033"/>
 </node>
 </node>
-<node TEXT="TabbedPanelMod.mm" ID="ID_842309458" LINK="TabbedPanelMod/TabbedPanelMod.mm"/>
+<node TEXT="TabbedPanelMod.mm" ID="ID_842309458" LINK="TabbedPanelMod/TabbedPanelMod.mm">
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:15" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:15-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="31.712" OBJECT="org.freeplane.features.format.FormattedNumber|31712|#,##0"/>
+</node>
 <node TEXT="generados automáticamente" STYLE_REF="Organizador" ID="ID_339327810"><richcontent TYPE="DETAILS">
 <html>
   <head>
@@ -598,27 +714,93 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
-<node TEXT="history.md" POSITION="bottom_or_right" ID="ID_1635185936" LINK="TabbedPanelMod/history.md"/>
-<node TEXT="version.properties" POSITION="bottom_or_right" ID="ID_756696516" LINK="TabbedPanelMod/version.properties"/>
-<node TEXT="TabbedPanelMod.mm.bak" POSITION="bottom_or_right" ID="ID_1277294252" LINK="TabbedPanelMod/TabbedPanelMod.mm.bak"/>
-<node TEXT="TabbedPanelMod-v0.4.addon.mm" POSITION="bottom_or_right" ID="ID_817706156" LINK="TabbedPanelMod/TabbedPanelMod-v0.4.addon.mm"/>
-<node TEXT="versiones anteriores" STYLE_REF="Organizador" FOLDED="true" POSITION="bottom_or_right" ID="ID_509161169">
-<node TEXT="TabbedPanelMod-v0.3.addon.mm" ID="ID_1365249928" LINK="TabbedPanelMod/TabbedPanelMod-v0.3.addon.mm"/>
-<node TEXT="TabbedPanelMod-v0.2.addon.mm" ID="ID_1873617501" LINK="TabbedPanelMod/TabbedPanelMod-v0.2.addon.mm"/>
-<node TEXT="TabbedPanelMod-v0.1.addon.mm" ID="ID_1694910110" LINK="TabbedPanelMod/TabbedPanelMod-v0.1.addon.mm"/>
+<node TEXT="history.md" POSITION="bottom_or_right" ID="ID_1635185936" LINK="TabbedPanelMod/history.md">
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:37" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:37-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="902" OBJECT="org.freeplane.features.format.FormattedNumber|902|#,##0"/>
+</node>
+<node TEXT="version.properties" POSITION="bottom_or_right" ID="ID_756696516" LINK="TabbedPanelMod/version.properties">
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:37" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:37-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="255" OBJECT="org.freeplane.features.format.FormattedNumber|255|#,##0"/>
+</node>
+<node TEXT="TabbedPanelMod.mm.bak" POSITION="bottom_or_right" ID="ID_1277294252" LINK="TabbedPanelMod/TabbedPanelMod.mm.bak">
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:33" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:33-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="31.699" OBJECT="org.freeplane.features.format.FormattedNumber|31699|#,##0"/>
+</node>
+<node TEXT="TabbedPanelMod-v0.5.addon.mm" POSITION="bottom_or_right" ID="ID_642952590" LINK="TabbedPanelMod/TabbedPanelMod-v0.5.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:45-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="28-08-23 18:51" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-28T18:51-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="153.896" OBJECT="org.freeplane.features.format.FormattedNumber|153896|#,##0"/>
+</node>
+<node TEXT="versiones anteriores" STYLE_REF="Organizador" POSITION="bottom_or_right" ID="ID_509161169">
+<node TEXT="TabbedPanelMod-v0.4.addon.mm" ID="ID_817706156" LINK="TabbedPanelMod/TabbedPanelMod-v0.4.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="15-08-23 19:29" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-15T19:29-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="05-10-23 11:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-05T11:12-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="09-08-23 13:23" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T13:23-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="152.823" OBJECT="org.freeplane.features.format.FormattedNumber|152823|#,##0"/>
+</node>
+<node TEXT="TabbedPanelMod-v0.3.addon.mm" ID="ID_1365249928" LINK="TabbedPanelMod/TabbedPanelMod-v0.3.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="31-07-23 20:04" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-31T20:04-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="05-10-23 11:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-05T11:12-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="31-07-23 19:45" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-31T19:45-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="131.308" OBJECT="org.freeplane.features.format.FormattedNumber|131308|#,##0"/>
+</node>
+<node TEXT="TabbedPanelMod-v0.2.addon.mm" ID="ID_1873617501" LINK="TabbedPanelMod/TabbedPanelMod-v0.2.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="17-07-23 19:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-17T19:17-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="05-10-23 11:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-05T11:12-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="17-07-23 19:17" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-17T19:17-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="128.542" OBJECT="org.freeplane.features.format.FormattedNumber|128542|#,##0"/>
+</node>
+<node TEXT="TabbedPanelMod-v0.1.addon.mm" ID="ID_1694910110" LINK="TabbedPanelMod/TabbedPanelMod-v0.1.addon.mm">
+<attribute NAME="lastModifiedTime" VALUE="16-07-23 15:58" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-16T15:58-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="05-10-23 11:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-05T11:12-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="15-07-23 17:37" OBJECT="org.freeplane.features.format.FormattedDate|2023-07-15T17:37-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="51.136" OBJECT="org.freeplane.features.format.FormattedNumber|51136|#,##0"/>
+</node>
 </node>
 <node TEXT="gradle" STYLE_REF="Organizador" FOLDED="true" POSITION="bottom_or_right" ID="ID_1286931837">
 <node TEXT="gradle" ID="ID_1277474861" LINK="TabbedPanelMod/gradle/">
 <node TEXT="wrapper" ID="ID_1508388944" LINK="TabbedPanelMod/gradle/wrapper/">
-<node TEXT="gradle-wrapper.jar" ID="ID_608615230" LINK="TabbedPanelMod/gradle/wrapper/gradle-wrapper.jar"/>
-<node TEXT="gradle-wrapper.properties" ID="ID_182771284" LINK="TabbedPanelMod/gradle/wrapper/gradle-wrapper.properties"/>
+<node TEXT="gradle-wrapper.jar" ID="ID_608615230" LINK="TabbedPanelMod/gradle/wrapper/gradle-wrapper.jar">
+<attribute NAME="lastModifiedTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="creationTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="61.608" OBJECT="org.freeplane.features.format.FormattedNumber|61608|#,##0"/>
+</node>
+<node TEXT="gradle-wrapper.properties" ID="ID_182771284" LINK="TabbedPanelMod/gradle/wrapper/gradle-wrapper.properties">
+<attribute NAME="lastModifiedTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:29" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:29-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="221" OBJECT="org.freeplane.features.format.FormattedNumber|221|#,##0"/>
 </node>
 </node>
-<node TEXT="gradlew" ID="ID_1690424754" LINK="TabbedPanelMod/gradlew"/>
-<node TEXT="gradlew.bat" ID="ID_1211452393" LINK="TabbedPanelMod/gradlew.bat"/>
+</node>
+<node TEXT="gradlew" ID="ID_1690424754" LINK="TabbedPanelMod/gradlew">
+<attribute NAME="lastModifiedTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="05-10-23 11:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-05T11:12-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="8.495" OBJECT="org.freeplane.features.format.FormattedNumber|8495|#,##0"/>
+</node>
+<node TEXT="gradlew.bat" ID="ID_1211452393" LINK="TabbedPanelMod/gradlew.bat">
+<attribute NAME="lastModifiedTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="05-10-23 11:12" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-05T11:12-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="09-08-23 15:48" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:48-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="2.868" OBJECT="org.freeplane.features.format.FormattedNumber|2868|#,##0"/>
 </node>
 </node>
-<node TEXT="build.gradle" ID="ID_1220697041" LINK="TabbedPanelMod/build.gradle"/>
+</node>
+<node TEXT="build.gradle" ID="ID_1220697041" LINK="TabbedPanelMod/build.gradle">
+<attribute NAME="lastModifiedTime" VALUE="09-08-23 17:35" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T17:35-0400|datetime"/>
+<attribute NAME="lastAccessTime" VALUE="07-10-23 14:29" OBJECT="org.freeplane.features.format.FormattedDate|2023-10-07T14:29-0300|datetime"/>
+<attribute NAME="creationTime" VALUE="09-08-23 15:24" OBJECT="org.freeplane.features.format.FormattedDate|2023-08-09T15:24-0400|datetime"/>
+<attribute NAME="fileSize" VALUE="3.571" OBJECT="org.freeplane.features.format.FormattedNumber|3571|#,##0"/>
+</node>
 </node>
 <node TEXT="resources" FOLDED="true" ID="ID_687946481" LINK="resources/">
 <node TEXT="Standard.png" ID="ID_781611361" LINK="resources/Standard.png"/>
@@ -636,6 +818,7 @@ before the actual namefilter setting)
     </p>
   </body>
 </html></richcontent>
+<node TEXT="TPM.properties" ID="ID_1956419510" LINK="ignoredByGitHub/TPM.properties"/>
 </node>
 <node TEXT="delete" ID="ID_1612888383" LINK="delete/"><richcontent TYPE="DETAILS">
 <html>
@@ -821,7 +1004,7 @@ justa a **dummy** markdown file
 <node TEXT="TabbedPanelMod project.mm" ID="ID_1474290422" LINK="TabbedPanelMod%20project.mm"/>
 </node>
 <node TEXT="new imported files" STYLE_REF="newFolderImport" ID="ID_1996504727">
-<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedNumber|2|#0.####"/>
+<attribute NAME="log_MDI" VALUE="2" OBJECT="org.freeplane.features.format.FormattedObject|org.freeplane.plugin.script.proxy.ConvertibleNumber&amp;#x7c;2|number:decimal:#0.####"/>
 <richcontent TYPE="NOTE">
 <html>
   <head>
@@ -829,7 +1012,7 @@ justa a **dummy** markdown file
   </head>
   <body>
     <p>
-      Inated:&#xa0;&#xa0;&#xa0;2023-08-12&#xa0;&#xa0;18:22:55
+      Inated:&#xa0;&#xa0;&#xa0;2023-10-07&#xa0;&#xa0;14:46:18
     </p>
     <p>
       
@@ -859,7 +1042,7 @@ justa a **dummy** markdown file
       ------- Folders: --------&#xa0;
     </p>
     <p>
-      27 folders didn't need to be moved&#xa0;
+      24 folders didn't need to be moved&#xa0;
     </p>
     <p>
       
@@ -886,12 +1069,8 @@ justa a **dummy** markdown file
       No failed operation in drive
     </p>
   </body>
-</html></richcontent>
-<node TEXT="TabbedPanelMod" ID="ID_486066267" LINK="TabbedPanelMod/">
-<node TEXT="src" ID="ID_1682335685" LINK="TabbedPanelMod/src/">
-<node TEXT="main" ID="ID_880317617" LINK="TabbedPanelMod/src/main/"/>
-</node>
-</node>
+</html>
+</richcontent>
 </node>
 <node TEXT="Tareas" STYLE_REF="locked" ID="ID_838858443">
 <node TEXT="colores Freeplane" ID="ID_574877018">
@@ -2904,8 +3083,7 @@ justa a **dummy** markdown file
       tpmProps.store(new FileWriter(tpmPropsFile),'un comentario')
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent TYPE="DETAILS">
 <html>
   <head>
@@ -2916,10 +3094,397 @@ justa a **dummy** markdown file
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node TEXT="guardar valores en archivo config" ID="ID_127606800"/>
+<node TEXT="angostar columa de tabs" ID="ID_208997122">
+<node TEXT="prueba A" ID="ID_290235615">
+<icon BUILTIN="forward"/>
+<icon BUILTIN="button_ok"/>
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import javax.swing.UIDefaults
+    </p>
+    <p>
+      import javax.swing.UIManager
+    </p>
+    <p>
+      import javax.swing.JComponent
+    </p>
+    <p>
+      import javax.swing.SwingUtilities
+    </p>
+    <p>
+      import java.awt.Insets
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // def defa = UIManager.getLookAndFeel()//Defaults();
+    </p>
+    <p>
+      // return defa//['TabbedPane.tabInsets']
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def TP = ui.freeplaneTabbedPanel
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //1. get previous
+    </p>
+    <p>
+      def previousTabInsets = UIManager.getInsets('TabbedPane.tabInsets')
+    </p>
+    <p>
+      println previousTabInsets
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //2. change them
+    </p>
+    <p>
+      //UIManager.put('TabbedPane.tabInsets',new Insets(4,12,4,12))
+    </p>
+    <p>
+      UIManager.put('TabbedPane.tabInsets',new Insets(0,2,0,1))
+    </p>
+    <p>
+      println&#xa0;&#xa0;UIManager.getInsets('TabbedPane.tabInsets')
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //3. update TP
+    </p>
+    <p>
+      TP.updateUI()
+    </p>
+    <p>
+      TP.revalidate()
+    </p>
+    <p>
+      TP.repaint()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //4. return to previous
+    </p>
+    <p>
+      UIManager.put('TabbedPane.tabInsets', previousTabInsets)
+    </p>
+    <p>
+      println UIManager.getInsets('TabbedPane.tabInsets')
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      return TP
+    </p>
+  </body>
+</html></richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+<attribute NAME="IMP" VALUE="1" OBJECT="org.freeplane.features.format.FormattedNumber|1"/>
+<attribute NAME="PRIO" VALUE="=node[&apos;IMP&apos;].num0 + node[&apos;URG&apos;].num0"/>
+</node>
+<node TEXT="prueba B" ID="ID_1764559902"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import javax.swing.UIDefaults
+    </p>
+    <p>
+      import javax.swing.UIManager
+    </p>
+    <p>
+      import javax.swing.JComponent
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // def defa = UIManager.getLookAndFeel()//Defaults();
+    </p>
+    <p>
+      // return defa//['TabbedPane.tabInsets']
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def TP = ui.freeplaneTabbedPanel
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //TP.updateUI()
+    </p>
+    <p>
+      def myUI = TP.getUI()
+    </p>
+    <p>
+      return myUI
+    </p>
+    <p>
+      //myUI.getStyleableInfos(TP)
+    </p>
+    <p>
+      //myUI.getStyleableValue(TP, 'tabInsets')
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //TP.getUIClassID()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // com.formdev.flatlaf.ui.FlatTabbedPaneUI@349b8c5c
+    </p>
+    <p>
+      // com.formdev.flatlaf.ui.FlatTabbedPaneUI@7a2267c7
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def compUI = TP.UI.createUI(TP)
+    </p>
+    <p>
+      compUI.getStyleableValue(TP, 'tabInsets').class
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // com.formdev.flatlaf.ui.FlatTabbedPaneUI@213fb0e8
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      // TabbedPane.tabInsets
+    </p>
+    <p>
+      //472&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TabbedPane.tabInsets&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;javax.swing.plaf.InsetsUIResource[top=4,left=12,bottom=4,right=12]&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;javax.swing.plaf.InsetsUIResource[top=4,left=12,bottom=4,right=12]
+    </p>
+  </body>
+</html></richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node TEXT="prueba C" ID="ID_1966190429"><richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      import groovy.swing.SwingBuilder
+    </p>
+    <p>
+      import java.awt.Color
+    </p>
+    <p>
+      import java.awt.Dimension
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      //def sb = new SwingBuilder()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def TP = ui.freeplaneTabbedPanel
+    </p>
+    <p>
+      //def pane = sb.panel()
+    </p>
+    <p>
+      //TP.addTab(&quot;test&quot;,pane)
+    </p>
+    <p>
+      def UI = TP.UI
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      UI.tabInsets.left = 2
+    </p>
+    <p>
+      UI.tabInsets.right = 2
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      TP.revalidate()
+    </p>
+    <p>
+      TP.repaint()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      return TP //UI//.tabHeight = 0
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      TP.UI.tabIconPlacement = 1
+    </p>
+    <p>
+      TP.UI.showTabSeparators = true
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def TabContainer = TP.components.find{it.class.simpleName=='TabContainer'}
+    </p>
+    <p>
+      TabContainer.background = Color.PINK
+    </p>
+    <p>
+      TabContainer.foreground = Color.orange
+    </p>
+    <p>
+      TabContainer.opaque = true
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      TabContainer.revalidate()
+    </p>
+    <p>
+      TabContainer.repaint()
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      return TabContainer
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      def bt = TabContainer.components[5]
+    </p>
+    <p>
+      bt.opaque = true
+    </p>
+    <p>
+      bt.background = Color.CYAN
+    </p>
+    <p>
+      //bt.maximumSize = new Dimension(60,60)
+    </p>
+    <p>
+      bt.preferredSize = new Dimension(40,20)
+    </p>
+    <p>
+      //bt.minimumSize = new Dimension(30,10)
+    </p>
+    <p>
+      bt.revalidate()
+    </p>
+  </body>
+</html></richcontent>
+<richcontent TYPE="DETAILS">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .groovy
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
 </node>
 </node>
 </node>

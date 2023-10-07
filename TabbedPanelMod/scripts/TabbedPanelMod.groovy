@@ -1,6 +1,9 @@
-import javax.swing.JTabbedPane
 import java.awt.event.ComponentEvent
 import java.awt.event.ComponentListener
+import java.awt.Insets
+
+import javax.swing.JTabbedPane
+import javax.swing.UIManager
 
 import edofro.tabbedpanelmod.TPM
 
@@ -9,43 +12,30 @@ TP = TPM.FPTabPane
 
 switch(TP.getTabPlacement()){
     case JTabbedPane.TOP:
-        def numTabs = TP.tabCount
-        if (TP.hasProperty('collapsed')){
-            TP.collapsed = false
-        } else {
-            TP.metaClass.collapsed = false
-        }
+        setTabProperty('originalWidth', TP.width)
+        setTabProperty('collapsed',false)
+        setTabProperty('isModded', true)
         if (!TP.hasProperty('tabWidths')){
-        //if (!TP.hasProperty('tabWidths') || !TP.tabWidths ){ //this here is for testing purposes. can be commented/deleted, (and uncomment the previous line)
             def tw = TPM.getInitialTabWidths()
-            /*def tw = [:]
-            numTabs.times{ i ->
-                tw[TP.getTitleAt(i)] = null
-            }*/
-            //println tw
             TP.metaClass.tabWidths = tw
             TP.tabWidths[TP.getTitleAt(TP.selectedIndex)] = TP.width
-            //println TP.tabWidths
         }
-        if (TP.hasProperty('originalWidth')){
-            TP.originalWidth = TP.width
-        } else {
-            TP.metaClass.originalWidth = TP.width
+        if (!TP.hasProperty('tabIconNames')){
+            TP.metaClass.tabIconNames = [:]
         }
-        if (TP.hasProperty('isModded')){
-            TP.isModded = true
-        } else {
-            TP.metaClass.isModded = true
-        }
-        numTabs.times{i ->
-            TPM.modifyTab(i)
-        }
+
+        TP.tabCount.times{i -> TPM.modifyTab(i) }
         TP.setTabPlacement(JTabbedPane.RIGHT)
-        if(TP.tabWidths[TP.getToolTipTextAt(TP.selectedIndex)]){
-            TPM.resizeTP(TP.tabWidths[TP.getToolTipTextAt(TP.selectedIndex)])
-        }
+
+        def initialTabWidth = TP.tabWidths[TP.getToolTipTextAt(TP.selectedIndex)]
+        if(initialTabWidth)
+            TPM.resizeTP(initialTabWidth)
+
+        resizeTabsContainer()
+
         TP.componentListeners.findAll{ it.class.toString() == 'class CustomTabPanelComponentListener' }.each{TP.removeComponentListener(it)}
         TP.addComponentListener(new CustomTabPanelComponentListener())
+
         break
     case JTabbedPane.RIGHT:
         TP.tabCount.times{i ->  TP.setTabComponentAt(i,null)}
@@ -56,6 +46,7 @@ switch(TP.getTabPlacement()){
         TP.setTabPlacement(JTabbedPane.TOP)
         TP.collapsed = false
         TP.isModded = false
+        TP.updateUI()
         TPM.resizeTP(TP.originalWidth)
         //TP.tabWidths.clear() //this here is for testing purposes. can be commented/deleted
         //println TP.tabWidths
@@ -67,14 +58,30 @@ switch(TP.getTabPlacement()){
 
 return 'done'
 
+def setTabProperty(String name, value){
+    if (TP.hasProperty(name))
+        TP[name] = value
+    else
+        TP.metaClass[name] = value
+}
+
+def resizeTabsContainer(){
+    def previousTabInsets = UIManager.getInsets('TabbedPane.tabInsets')
+    UIManager.put('TabbedPane.tabInsets',new Insets(0,2,0,1))
+    TP.updateUI()
+    TP.revalidate()
+    TP.repaint()
+    UIManager.put('TabbedPane.tabInsets', previousTabInsets)
+}
+
 
 class CustomTabPanelComponentListener implements ComponentListener {
     void componentResized(ComponentEvent e) { //https://docs.oracle.com/javase/8/docs/api/java/awt/event/ComponentEvent.html
         def comp = e.component
         //println "componentResized: ignorar: ${TPM.ignoreResizing}"
         if (!TPM.ignoreResizing && comp.getTabPlacement()==JTabbedPane.RIGHT && !comp.collapsed && comp.width>=TPM.collapsedWidth+10){
-            def selTab = comp.getToolTipTextAt(comp.selectedIndex)
-            comp.tabWidths[selTab] = comp.width
+            def selectedTabName = comp.getToolTipTextAt(comp.selectedIndex)
+            comp.tabWidths[selectedTabName] = comp.width
             TPM.saveTabWidths()
             //println comp.tabWidths
         }

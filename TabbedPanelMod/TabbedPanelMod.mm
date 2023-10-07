@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-0.75 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;0 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
@@ -78,7 +78,7 @@
 </hook>
 <attribute_layout NAME_WIDTH="104.25 pt" VALUE_WIDTH="233.24999 pt"/>
 <attribute NAME="name" VALUE="tabbedPanelMod"/>
-<attribute NAME="version" VALUE="v0.4"/>
+<attribute NAME="version" VALUE="v0.5"/>
 <attribute NAME="author" VALUE="edoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.11"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -204,7 +204,7 @@
 <node TEXT="Added init script to change Tabbed Panel layout on Freplane&apos;s start up." ID="ID_1754942485"/>
 <node TEXT="Added runOnStartingFreeplane preference" ID="ID_315878793"/>
 </node>
-<node TEXT="v0.4" ID="ID_1757710277">
+<node TEXT="v0.4" FOLDED="true" ID="ID_1757710277">
 <node TEXT="added boolean property &quot;isModded&quot; to TabPanel" ID="ID_1090337022">
 <node TEXT="it is true if addon have been applied" ID="ID_1274695250"/>
 </node>
@@ -213,6 +213,11 @@
 </node>
 <node TEXT="&quot;collapsed width&quot; is now detemined dinamically" ID="ID_994237866"/>
 <node TEXT="ToolPanel widths are now stored as a properties file" ID="ID_494089958"/>
+</node>
+<node TEXT="v0.5" ID="ID_1845093400">
+<node TEXT="Now when adding a tab that was used a time before, it automatically changes its width to the last one saved" ID="ID_918112952"/>
+<node TEXT="bigger Tab buttons and narrower tabs container" ID="ID_1714622413"/>
+<node TEXT="Now it remembers the icons when going to TabsOnTop and back" ID="ID_464211225"/>
 </node>
 </node>
 <node TEXT="license" FOLDED="true" POSITION="top_or_left" ID="ID_1289127140"><richcontent TYPE="NOTE">
@@ -242,13 +247,13 @@
   </head>
   <body>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </span></font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">The child node contains the add-on configuration as an extension to mindmapmodemenu.xml (in Tools-&gt;Preferences-&gt;Add-ons). </span>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;</span></font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;</span>
     </p>
     <p>
-      <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </span></font>
+      <span style="color: #000000; font-family: SansSerif, sans-serif;">Every property in the configuration should receive a default value in <i>default.properties</i>&#xa0;node. </span>
     </p>
     <p>
       
@@ -261,13 +266,13 @@
     </p>
     <ul>
       <li>
-        create the child node containing <font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">the add-on configuration as an extension to mindmapmodemenu.xml</span></font>
+        create the child node containing <span style="color: #000000; font-family: SansSerif, sans-serif;">the add-on configuration as an extension to mindmapmodemenu.xml</span>
       </li>
       <li>
-        add the properties to the <font color="#000000" face="SansSerif, sans-serif"><i><span style="color: #000000; font-family: SansSerif, sans-serif;">default.properties</span></i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span></font>
+        add the properties to the <i><span style="color: #000000; font-family: SansSerif, sans-serif;">default.properties</span></i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span>
       </li>
       <li>
-        add the properties to the <i>translations</i><font color="#000000" face="SansSerif, sans-serif"><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span></font>
+        add the properties to the <i>translations</i><span style="color: #000000; font-family: SansSerif, sans-serif;">&#xa0;node</span>
       </li>
     </ul>
     <p>

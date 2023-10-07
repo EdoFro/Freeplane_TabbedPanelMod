@@ -64,14 +64,11 @@ https://github.com/EdoFro/Freeplane_TabbedPanelMod/assets/35700575/7c827355-d150
 
 <details><summary><h4>- Flat LaF</h4></summary>
 
-|L&F|image|
-|----|----|
-|Flat Light|![Flat Light](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png)|
-|Flat IntelliJ|![Flat IntelliJ](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png)|
-|Flat Solarized|![Flat Solarized](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png)|
-|Flat Dark|![Flat Dark](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png)|
-|Flat Darkula|![Flat Darkula](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png)|
-|Flat Dark Material|![Flat Dark Material](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png)|
+|L&F|image|L&F|image|
+|----|----|----|----|
+|Flat Light|![Flat Light](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png)|Flat IntelliJ|![Flat IntelliJ](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png)|
+|Flat Solarized|![Flat Solarized](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png)|Flat Dark|![Flat Dark](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png)|
+|Flat Darkula|![Flat Darkula](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png)|Atom One<br>Dark Contrast|![Flat Dark Material](https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png)|
 
 </details>
 <details><summary><h4>- Classic LaF</h4></summary>

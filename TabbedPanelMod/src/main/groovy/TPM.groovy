@@ -1,6 +1,6 @@
 package edofro.tabbedpanelmod
 
-import javax.swing.JButton
+
 import java.awt.Dimension
 import java.awt.Insets
 
@@ -15,6 +15,7 @@ import org.freeplane.plugin.script.proxy.ScriptUtils
 
 
 class TPM{
+    // region properties
     static final c = ScriptUtils.c()
     static final JTabbedPane FPTabPane = ui.getFreeplaneTabbedPanel()
 
@@ -35,13 +36,17 @@ class TPM{
 
     static boolean savingTpmProps = false
 
+    // endregion
+
+    // region methods
+
     def static modifyTab(int i,  iconForTab = null){
         if(isModActive()) {
-            def toolTip = FPTabPane.getTitleAt(i) ?: FPTabPane.getToolTipTextAt(i)
-            FPTabPane.setToolTipTextAt(i, toolTip)
+            def tabName = FPTabPane.getTitleAt(i) ?: FPTabPane.getToolTipTextAt(i)
+            FPTabPane.setToolTipTextAt(i, tabName)
             FPTabPane.setTitleAt(i, null)
-            FPTabPane.setTabComponentAt(i, tabButton(i, toolTip, iconForTab))
-            def w = FPTabPane.tabWidths[toolTip]
+            FPTabPane.setTabComponentAt(i, tabButton(i, tabName, iconForTab))
+            def w = FPTabPane.tabWidths[tabName]
             if(w)
                 resizeTP(w)
         }
@@ -51,7 +56,7 @@ class TPM{
         FPTabPane.hasProperty('isModded')? FPTabPane.isModded : false
     }
 
-    def static tabButton(int indexP, String toolTip,  iconForTab = null){
+    def static tabButton(int indexP, String tabName,  iconForTab = null){
         def TPMaction = {e ->
             collapsedWidth = e.source.parent.width
             def botones = e.source.parent.components
@@ -65,26 +70,26 @@ class TPM{
                 resizeTP(collapsedWidth)
             }else{
                 FPTabPane.setSelectedIndex(index)
-                if(FPTabPane.tabWidths[toolTip]){
-                    resizeTP(FPTabPane.tabWidths[toolTip])
+                if(FPTabPane.tabWidths[tabName]){
+                    resizeTP(FPTabPane.tabWidths[tabName])
                 } else if (FPTabPane.collapsed){
                     resizeTP(FPTabPane.originalWidth)
                 } else {
-                    FPTabPane.tabWidths[toolTip] = FPTabPane.width
+                    FPTabPane.tabWidths[tabName] = FPTabPane.width
                 }
                 FPTabPane.collapsed = false
             }
         }
         def icono = iconForTab?menuUtils.getMenuItemIcon('IconAction.' + iconForTab):null
-        icono ?= getIcon(indexP, toolTip)
+        icono ?= getIconFromTPM(indexP, tabName)
         def btn = swingBuilder.button(
                 horizontalAlignment : SwingConstants.LEFT,
                 icon                : icono,
-                toolTipText         : toolTip,
                 margin              : new Insets(0,0,0,0),
                 borderPainted       : false,
                 opaque              : false,
                 actionPerformed     : TPMaction
+                toolTipText         : tabName,
         )
         return btn
     }
@@ -98,7 +103,7 @@ class TPM{
         parentBox.repaint()
     }
 
-    def static getIcon(i,t){
+    def static getIconFromTPM(i, t){
         def ico = 'IconAction.TabbedPanelMod/'
         menuUtils.getMenuItemIcon("${ico}${t}")?:menuUtils.getMenuItemIcon("${ico}${t.toLowerCase()}")?: menuUtils.getMenuItemIcon("${ico}${String.format('%02d',i)}")?: menuUtils.getMenuItemIcon(iconos[i])
     }
@@ -110,7 +115,7 @@ class TPM{
             tpmProps.each{k,v ->
                 tw[k] = ((String) v).isInteger()?v.toInteger():v
             }
-            println tw
+            // println tw
         }
         return tw
     }
@@ -134,4 +139,6 @@ class TPM{
         }
 
     }
+
+    // endregion
 }

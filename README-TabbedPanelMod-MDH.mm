@@ -138,15 +138,20 @@ blockquote {
 <node TEXT="TabbedPanelMod Add-on" ID="ID_501079134">
 <node TEXT="This add-on changes the tabbed panel (Tool panel) layout." ID="ID_974026164"/>
 <node TEXT="It places its tabs to the right and changes the labels to icons." ID="ID_1736000779"/>
-<node TEXT="Default (windows) Look&amp;Feel" ID="ID_864411361"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_338049171"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="Default (windows) Look&amp;Feel" ID="ID_864411361">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1628265198"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="TabsToTheRight.png" POSITION="bottom_or_right" ID="ID_1507146399" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/TabsToTheRight.png"/>
 </node>
-<node TEXT="Flat Darkula Look&amp;Feel" ID="ID_1032022283"/>
+</node>
+<node TEXT="Flat Darkula Look&amp;Feel" ID="ID_1032022283">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1408288447"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat_Darkula.png" ID="ID_1872907039" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png"/>
+</node>
+</node>
 </node>
 <node TEXT="Menu:" ID="ID_678822760"/>
 <node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_861803648"><richcontent TYPE="NOTE">
@@ -217,84 +222,88 @@ blockquote {
 <node TEXT="Works with different Look&amp;Feels" ID="ID_908315966">
 <node TEXT="Flat LaF" ID="ID_497945471">
 <icon BUILTIN="emoji-1F53B"/>
-<node TEXT="Flat Light" ID="ID_1680181839">
-<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="list" STYLE_REF="MarkdownHelperNode" ID="ID_1853207529"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.list(node)</text></richcontent>
+<node TEXT="Flat Light" POSITION="bottom_or_right" ID="ID_1680181839">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1656201953"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Light" POSITION="bottom_or_right" ID="ID_1784552738" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Light.png"/>
 </node>
 </node>
-<node TEXT="Flat IntelliJ" ID="ID_608380770">
-<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="Flat IntelliJ" POSITION="bottom_or_right" ID="ID_608380770">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1822859718"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat IntelliJ" POSITION="bottom_or_right" ID="ID_1334695456" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20IntelliJ.png"/>
 </node>
 </node>
-<node TEXT="Flat Solarized" ID="ID_837985595">
-<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="Flat Solarized" POSITION="bottom_or_right" ID="ID_837985595">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_34041322"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Solarized" POSITION="bottom_or_right" ID="ID_108944190" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Solarized.png"/>
 </node>
 </node>
-<node TEXT="Flat Dark" ID="ID_68850982">
-<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="Flat Dark" POSITION="bottom_or_right" ID="ID_68850982">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1960318946"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Dark" POSITION="bottom_or_right" ID="ID_384444209" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark.png"/>
 </node>
 </node>
-<node TEXT="Flat Darkula" ID="ID_1953678927">
-<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="Flat Darkula" POSITION="bottom_or_right" ID="ID_1953678927">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_275448834"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Darkula" POSITION="bottom_or_right" ID="ID_1726448340" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Darkula.png"/>
 </node>
 </node>
-<node TEXT="Flat Dark Material" ID="ID_995409475">
-<icon BUILTIN="emoji-1F53B"/>
+<node TEXT="Flat Dark Material" POSITION="bottom_or_right" ID="ID_995409475">
 <node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1366280141"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Flat Dark Material" ID="ID_571969252" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Flat%20Dark%20Material.png"/>
 </node>
 </node>
 </node>
+</node>
 <node TEXT="Classic LaF" ID="ID_700031968">
 <icon BUILTIN="emoji-1F53B"/>
-<node TEXT="Windows" POSITION="bottom_or_right" ID="ID_1651744618">
-<icon BUILTIN="emoji-1F53B"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1480009110"><richcontent TYPE="NOTE">
+<node TEXT="table" STYLE_REF="MarkdownHelperNode" ID="ID_1288353509"><richcontent TYPE="NOTE">
+<text>= edofro.MarkDownHelper.MDH.table(node)</text></richcontent>
+<node TEXT="r" ID="ID_1211010716">
+<node TEXT="L&amp;F" ID="ID_759417209"/>
+<node TEXT="image" ID="ID_831744652"/>
+</node>
+<node TEXT="r" ID="ID_1368725648">
+<node TEXT="Windows" POSITION="bottom_or_right" ID="ID_1651744618"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1480009110"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Windows" POSITION="bottom_or_right" ID="ID_1185183087" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows.png"/>
 </node>
 </node>
-<node TEXT="Windows Classic" POSITION="bottom_or_right" ID="ID_685827720">
-<icon BUILTIN="emoji-1F53B"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_871894983"><richcontent TYPE="NOTE">
+<node TEXT="r" ID="ID_1798357058">
+<node TEXT="Windows Classic" ID="ID_685827720"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_871894983"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Windows Classic" POSITION="bottom_or_right" ID="ID_604790389" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Windows%20Classic.png"/>
 </node>
 </node>
-<node TEXT="Nimbus" POSITION="bottom_or_right" ID="ID_1109531556">
-<icon BUILTIN="emoji-1F53B"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1526780182"><richcontent TYPE="NOTE">
+<node TEXT="r" ID="ID_463959698">
+<node TEXT="Nimbus" ID="ID_1109531556"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1526780182"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Nimbus" POSITION="bottom_or_right" ID="ID_141763095" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Nimbus.png"/>
 </node>
 </node>
-<node TEXT="Metal" POSITION="bottom_or_right" ID="ID_175684825">
-<icon BUILTIN="emoji-1F53B"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_1692459119"><richcontent TYPE="NOTE">
+<node TEXT="r" ID="ID_1924835823">
+<node TEXT="Metal" ID="ID_175684825"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_1692459119"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="Metal" POSITION="bottom_or_right" ID="ID_591109299" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/Metal.png"/>
 </node>
 </node>
-<node TEXT="CDE Motif" POSITION="bottom_or_right" ID="ID_871575667">
-<icon BUILTIN="emoji-1F53B"/>
-<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" POSITION="bottom_or_right" ID="ID_662779249"><richcontent TYPE="NOTE">
+<node TEXT="r" ID="ID_789281901">
+<node TEXT="CDE Motif" ID="ID_871575667"/>
+<node TEXT="web Image" STYLE_REF="MarkdownHelperNode" ID="ID_662779249"><richcontent TYPE="NOTE">
 <text>= edofro.MarkDownHelper.MDH.webImageLink(node)</text></richcontent>
 <node TEXT="CDE Motif" POSITION="bottom_or_right" ID="ID_1102388043" LINK="https://github.com/EdoFro/Freeplane_TabbedPanelMod/blob/main/resources/CDE%20Motif.png"/>
+</node>
 </node>
 </node>
 </node>

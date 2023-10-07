@@ -136,7 +136,7 @@ class TPM{
     def static saveTabWidths(){
         if (!savingTpmProps && FPTabPane.hasProperty('tabWidths')) {
             savingTpmProps = true
-            new Timer().runAfter(2000) {
+            new Timer().runAfter(10000) {
                 def map2 = FPTabPane.tabWidths.clone()
                 map2.each { k, v -> map2[k] = v.toString() }
                 if (tpmProps != map2) {
